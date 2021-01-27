@@ -1,0 +1,15 @@
+{
+  "name": "Stylesora",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o dist/styles.css",
+    "bulid-js": ""
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.3",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2"
+  }
+}
