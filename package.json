@@ -1,5 +1,5 @@
 {
-  "name": "Stylesora",
+  "name": "stylesora",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,7 @@
 "scripts": {
     "build-css": "postcss src/styles/styles.css -o dist/styles.css",
     "build:prod": "NODE_ENV=production postcss src/styles/styles.css -o dist/styles.css",
-    "watch": "nodemon -e scss -x \"npm run node-sass\""
+    "watch": "nodemon -e scss -x \"npm run build-css\""
   },
   "devDependencies": {
     "autoprefixer": "^10.2.3",
