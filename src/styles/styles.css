@@ -6,11 +6,19 @@
 /*-----------------------
     Base Styles
 -------------------------*/
+@import '1_base/index.css';
 
 /*-----------------------
     Layout Styles
 -------------------------*/
+@import '2_layout/index.css';
 
 /*-----------------------
     Component Styles
 -------------------------*/
+@import '3_components/index.css';
+
+/*-----------------------
+    View Styles
+-------------------------*/
+@import '4_views/index.css';

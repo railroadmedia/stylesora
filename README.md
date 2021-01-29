@@ -4,7 +4,15 @@ Stylesora is a CSS package built on [tailwind](https://tailwindcss.com/docs) and
 
 ## Getting Started
 
-Coming soon...
+### Instalation
+
+`npm i stylesora --save`
+
+### Global Dependencies
+
+...
+
+## Usage
 
 ```
 ```
