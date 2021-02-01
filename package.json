@@ -1,16 +1,28 @@
 {
   "name": "stylesora",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "repository": "https://github.com/railroadmedia/stylesora",
-"scripts": {
-    "build-css": "postcss src/styles/styles.css -o dist/styles.css",
-    "build:prod": "NODE_ENV=production postcss src/styles/styles.css -o dist/styles.css",
-    "watch": "nodemon -e scss -x \"npm run build-css\""
+  "description": "A CSS package for styling Musora's websites and web applications with ease. Includes Tailwind CSS as well as custom patterns for rapid prototyping and development.",
+  "files": [
+    "dist/**/*"
+  ],
+  "main": "dist/index.js",
+  "style": "dist/stylesora.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/railroadmedia/stylesora"
   },
+  "homepage": "https://github.com/railroadmedia/stylesora/blob/main/README.md",
+  "scripts": {
+    "build:css": "postcss src/styles/styles.css -o dist/stylesora.css",
+    "build:prod": "NODE_ENV=production postcss src/styles/styles.css -o dist/stylesora.css",
+    "watch": "onchange 'src/styles/**/*.css' -- npm run build:css"
+  },
+  "author": "Miguel Fondeur",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^10.2.3",
+    "cssnano": "^4.1.10",
+    "onchange": "^7.1.0",
     "postcss": "^8.2.4",
     "postcss-import": "^14.0.0",
     "postcss-nested": "^5.0.3",
