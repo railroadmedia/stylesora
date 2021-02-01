@@ -14,5 +14,7 @@ Stylesora is a CSS package built on [tailwind](https://tailwindcss.com/docs) and
 
 ## Usage
 
+Coming Soon
+
 ```
 ```
