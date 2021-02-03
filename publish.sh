@@ -3,7 +3,7 @@
 if git diff-index --quiet HEAD --; then
     # Build the lib and commit the files
     npm run build:prod;
-    git add -a
+    git add --all
     git commit -am "New build";
 
     # Create a new patch version
