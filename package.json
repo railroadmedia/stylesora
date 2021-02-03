@@ -1,7 +1,7 @@
 {
   "name": "stylesora",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A CSS package for styling Musora's websites and web applications with ease. Includes Tailwind CSS as well as custom patterns for rapid prototyping and development.",
   "files": [
     "dist/**/*"
