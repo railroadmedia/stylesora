@@ -8,9 +8,8 @@ if git diff-index --quiet HEAD --; then
 
     # Create a new patch version
     npm version patch;
-    PACKAGE_VERSION=$(grep -m1 version package.json | awk -F: '{ print $2 }' | sed 's/[", ]//g')
 
-    echo 'Creating Tag and Commit for Stylesora Version: ' $PACKAGE_VERSION
+    echo 'Creating Tag and Commit for Stylesora Version'
     
     git push --tags;
     git push;
