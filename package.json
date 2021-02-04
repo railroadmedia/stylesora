@@ -1,6 +1,6 @@
 {
   "name": "stylesora",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A CSS package for styling Musora's websites and web applications with ease. Includes Tailwind CSS as well as custom patterns for rapid prototyping and development.",
   "files": [
     "dist/**/*"
@@ -15,7 +15,7 @@
   "scripts": {
     "build:dev": "postcss styles/styles.css -o dist/stylesora.css",
     "build:prod": "cross-env NODE_ENV=production postcss styles/styles.css -o dist/stylesora.css",
-    "sync" : "browser-sync start -s -f '**/*' --index 'demo/index.html'",
+    "sync": "browser-sync start -s -f '**/*' --index 'demo/index.html'",
     "watch": "nodemon -w tailwind.config.js -w styles -w js -e css,js -x npm run build:dev",
     "demo": "run-p watch sync"
   },
