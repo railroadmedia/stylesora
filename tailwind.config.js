@@ -7,7 +7,7 @@ module.exports = {
   theme: {
       extend: {
           colors: {
-              drumeo: '#0B76DB',
+              drumeo: '#0000',
               'alert-red': '#FF0744'
           },
           spacing: {
