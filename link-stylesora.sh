@@ -7,17 +7,17 @@ select opt in "${options[@]}"
 do
     case $opt in
         "drumeo")
-            echo "Symlinking Stylesora with Drumeo..."
+            echo "Symlinking Stylesora with Drumeo"
             yarn install; yarn watch:dev & yarn link; cd /app/drumeo/laravel; yarn link stylesora; yarn watch;
-            echo "Watching Drumeo For Changes..."
+            echo "Watching Drumeo For Changes"
             ;;
         "pianote")
-            echo "Symlinking Stylesora with Pianote..."
+            echo "Symlinking Stylesora with Pianote"
             yarn install; yarn watch & yarn link; cd /app/pianote; yarn link stylesora; yarn watch;
-            echo "Watching Pianote For Changes..."
+            echo "Watching Pianote For Changes"
             ;;
         "guitareo")
-            echo "Symlinking Stylesora with Guitareo..."
+            echo "Symlinking Stylesora with Guitareo"
             yarn install; yarn watch & yarn link; cd /app/guitareo; yarn link stylesora; yarn watch;
             ;;
         *)
