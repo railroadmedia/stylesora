@@ -2,7 +2,7 @@
 
 if git diff-index --quiet HEAD --; then
     # Build the lib and commit the files
-    npm run build:prod;
+    yarn build:prod;
     git add --all
     git commit -am "New build";
 
