@@ -10,7 +10,7 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                sans: ['Bison Bold', 'Roboto Condensed']
+                sans: ['Roboto Condensed']
             },
             colors: {
                 transparent: 'transparent',

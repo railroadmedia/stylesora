@@ -24,6 +24,7 @@ module.exports = {
                 title: 'Stylesora',
                 path: '/stylesora/',
                 collapsable: false,
+                sidebarDepth: 0,
                 children: [
                     ['/stylesora/', 'Introduction'],
                     '/stylesora/usage'
@@ -33,6 +34,7 @@ module.exports = {
                 title: 'Utilities',
                 path: '/utilities/',
                 collapsable: false,
+                sidebarDepth: 0,
                 children: [
                     '/utilities/logos',
                     '/utilities/themes',
@@ -43,7 +45,12 @@ module.exports = {
                 title: 'Layout',
                 path: '/layout/',
                 collapsable: false,
-                children: []
+                sidebarDepth: 0,
+                children: [
+                    '/layout/containers',
+                    '/layout/grid',
+                    '/layout/navigation'
+                ]
             },
             {
                 title: 'Components',
@@ -69,14 +76,18 @@ module.exports = {
                 path: '/modules/',
                 collapsable: false,
                 sidebarDepth: 0,
-                children: []
+                children: [
+                    ['/modules/', 'Overview']
+                ]
             },
             {
                 title: 'Templates',
                 path: '/templates/',
                 collapsable: false,
                 sidebarDepth: 0,
-                children: []
+                children: [
+                    ['/templates/', 'Overview']
+                ]
             }
         ],
         lastUpdated: 'Last Updated',
