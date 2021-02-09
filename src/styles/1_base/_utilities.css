@@ -1,0 +1,26 @@
+@layer utilities {
+    .scrolling-touch { 
+        -webkit-overflow-scrolling: touch; 
+    }
+}
+
+/* Hide Scrollbars */
+.tw-scrollbar-none::-webkit-scrollbar {
+    display: none; /* Chrome */
+}
+.tw-scrollbar-none {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Alpine JS - hide elements before js loads */
+[x-cloak] { 
+    display: none !important; 
+}
+
+/* 
+Necessary when using Vue and Alpine show/hide classes
+Tailwind utilities override them with !important 
+*/
+.tw-soft-flex { display: flex; }
+.tw-soft-block { display: block; }

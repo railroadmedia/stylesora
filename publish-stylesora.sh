@@ -2,7 +2,7 @@
 
 if git diff-index --quiet HEAD --; then
     # Build the lib and commit the files
-    yarn build:prod;
+    yarn lib:build;
     git add --all
     git commit -am "New build";
 
