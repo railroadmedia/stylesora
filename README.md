@@ -10,7 +10,7 @@ Stylesora is a CSS package built on [tailwind](https://tailwindcss.com/docs) and
 
 #### In webpack.mix.js add the following:
 
-```
+```js
 mix.postCss('node_modules/stylesora/dist/stylesora.css', 'public/assets/css/stylesora')
    .purgeCss({
         folders: ['resources', 'vendor/railroad', 'node_modules/vuesora'],
