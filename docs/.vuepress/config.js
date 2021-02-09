@@ -1,6 +1,6 @@
 module.exports = {
     title: 'Musroa UI',
-    base: '/',
+    base: '/stylesora/',
     description: 'A CSS package for styling Musora\'s websites and web applications with ease. Includes Tailwind CSS as well as custom patterns for rapid prototyping and development.',
     evergreen: true,
     themeConfig: {
