@@ -43,7 +43,7 @@ home: true
         <span>Github Repo</span>
       </a>
     </div>
-    <div class="tw-w-1/2 tw-mx-auto md:tw-pl-12 lg:tw-pl-24 tw-mb-12">
+    <div class="tw-w-1/2 tw-mx-auto md:tw-pl-12 lg:tw-pl-24 tw-mb-12 md:tw-mb-0 ">
       <img src="/img/undraw_tailwind_css_1egw.svg">
     </div>
   </div>
@@ -52,7 +52,7 @@ home: true
 <section class="tw-py-20 md:tw-py-24 tw-bg-gray-50">
   <!-- Vuesoras -->
   <div class="tw-flex tw-px-4 md:tw-px-6 tw-mx-auto tw-max-w-screen-lg tw-flex-col md:tw-flex-row">
-    <div class="tw-w-1/2 tw-mx-auto md:tw-pr-12 lg:tw-pr-24 tw-mb-12">
+    <div class="tw-w-1/2 tw-mx-auto md:tw-pr-12 lg:tw-pr-24 tw-mb-12 md:tw-mb-0 ">
       <img src="/img/undraw_laravel_and_vue_59tp.svg">
     </div>
     <div class="tw-w-3/4 tw-mx-auto tw-text-center md:tw-text-left md:tw-w-1/2">
@@ -88,7 +88,7 @@ home: true
         <span>Github Repo</span>
       </a>
     </div>
-    <div class="tw-w-1/2 tw-mx-auto md:tw-pl-12 lg:tw-pl-24 tw-mb-12">
+    <div class="tw-w-1/2 tw-mx-auto md:tw-pl-12 lg:tw-pl-24 tw-mb-12 md:tw-mb-0 ">
       <img src="/img/undraw_Code_review_re_woeb.svg">
     </div>
   </div>
