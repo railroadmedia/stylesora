@@ -1,9 +1,6 @@
-# Installation and Usage
-
-## Getting Started
+# Getting Started
 
 ### Instalation
-
 `npm i stylesora --save`
 
 #### In webpack.mix.js add the following:
@@ -18,25 +15,30 @@ mix.postCss('node_modules/stylesora/dist/stylesora.css', 'public/assets/css/styl
     });
 ```
 
-## Library Commands
-### Compile and watch for Development
+#### Compile Assets
+`npm run dev`
+
+#### Include Stylesora in Template
+```html
+<link href="{{ asset('assets/css/stylesora/stylesora.css') }}" rel="stylesheet">
+```
+
+### Library Commands
+#### Compile and watch for Development
 
 `yarn lib:watch`
-### Build for Production
+#### Build for Production
 
 `yarn lib:build`
 
-## Documentation
-### Compile and watch Docs
-
+### Documentation
+#### Compile and watch Docs
 `yarn docs:watch`
-### Build Docs
-
+#### Build Docs
 `yarn docs:build`
 
-## Developing in other Environments
-### Run Symlink Command
-
+### Developing in other Environments
+#### Run Symlink Command
 `./link-stylesora.sh`
 
 

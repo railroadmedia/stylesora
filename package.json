@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/railroadmedia/stylesora/blob/main/README.md",
   "scripts": {
+    "build:js": "./node_modules/.bin/webpack --mode production",
     "build:dev": "postcss src/styles/styles.css -o dist/stylesora.css",
     "build:prod": "cross-env NODE_ENV=production postcss src/styles/styles.css -o dist/stylesora.css",
     "lib:watch": "nodemon -w tailwind.config.js -w src/styles -w js -e css,js -x npm run build:dev",
@@ -34,7 +35,9 @@
     "postcss-import": "^14.0.0",
     "postcss-nested": "^5.0.3",
     "tailwindcss": "^2.0.2",
-    "vuepress": "^1.8.0"
+    "vuepress": "^1.8.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
   },
   "dependencies": {
     "postcss-cli": "^8.3.1"

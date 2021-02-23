@@ -10,24 +10,23 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                sans: ['Roboto Condensed']
+                'roboto-condensed': ['"Roboto Condensed"', 'sans-serif'],
+                'open-sans': ['"Open Sans"', 'sans-serif']
             },
             colors: {
-                transparent: 'transparent',
-                current: 'currentColor',
-                drumeo: {
-                    primary: '#0B76DB'
-                },
-                pianote: {
-                    primary: '#F61A30'
-                },
-                guitareo: {
-                    primary: '#00C9AC'
-                },
-                gq: {
-                    primary: '#FFB500',
-                    secondary: '#010611'
-                }
+                drumeo: '#0B76DB',
+                pianote: '#F61A30',
+                guitareo: '#00C9AC',
+                'guitar-quest': '#FFB500',
+                'dark-blue': '#010611',
+                courses: '#07A0FF',
+                shows: '#0BBE76',
+                songs: '#F8004F',
+                'play-alongs': '#FFB500',
+                rudiments: '#FA6300',
+                error: '#F71B26',
+                success: '#00BC75',
+                highlight: '#F3F9FF'
             },
             spacing: {
                 md: '28rem',
@@ -63,7 +62,12 @@ module.exports = {
             auto: 'auto'
         }
     },
-    variants: {},
+    variants: {
+        extend: {
+            backgroundColor: ['active', 'visited'],
+            textColor: ['visited', 'active'],
+        }
+    },
     plugins: [],
 };
 

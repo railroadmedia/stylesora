@@ -1,0 +1,17 @@
+@layer components {
+    .tw-btn-secondary {
+        @apply tw-whitespace-nowrap tw-select-none tw-py-2 tw-px-4 tw-rounded-full tw-border-2 tw-border-current tw-font-roboto-condensed tw-font-bold tw-uppercase tw-cursor-pointer tw-transition hover:tw-bg-gray-100 active:tw-bg-current;
+    }
+    .tw-btn-secondary:active span,
+    .tw-btn-secondary:active i {
+        @apply tw-text-white;
+    }
+    .tw-btn-secondary:visited span,
+    .tw-btn-secondary:visited i {
+        @apply tw-text-current;
+    }
+
+    .tw-btn-primary {
+        @apply tw-whitespace-nowrap tw-select-none tw-py-2 tw-px-4 tw-rounded-full tw-border-2 tw-border-transparent tw-font-roboto-condensed tw-font-bold tw-uppercase tw-cursor-pointer tw-transition tw-text-white hover:tw-bg-gray-100 active:tw-bg-current active:tw-text-white visited:tw-text-white;
+    }
+}
