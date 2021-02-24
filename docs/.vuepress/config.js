@@ -35,6 +35,7 @@ module.exports = {
                     collapsable: false,
                     sidebarDepth: 0,
                     children: [
+                        ['/stylesora/themes/', 'Overview'],
                         '/stylesora/themes/logos',
                         '/stylesora/themes/colors',
                     ]
@@ -45,6 +46,7 @@ module.exports = {
                     collapsable: false,
                     sidebarDepth: 0,
                     children: [
+                        ['/stylesora/base/', 'Overview'],
                         '/stylesora/base/site'
                     ]
                 },
@@ -54,6 +56,7 @@ module.exports = {
                     collapsable: false,
                     sidebarDepth: 0,
                     children: [
+                        ['/stylesora/utilities/', 'Overview'],
                         '/stylesora/utilities/extensions',
                     ]
                 },
@@ -63,6 +66,7 @@ module.exports = {
                     collapsable: false,
                     sidebarDepth: 0,
                     children: [
+                        ['/stylesora/layout/', 'Overview'],
                         '/stylesora/layout/containers',
                         '/stylesora/layout/grid',
                         '/stylesora/layout/navigation'
