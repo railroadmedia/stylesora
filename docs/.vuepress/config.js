@@ -106,6 +106,10 @@ module.exports = {
                     ]
                 }
             ],
+            //fallback
+            '/': [
+                ''
+            ]
         },
         lastUpdated: 'Last Updated',
     },

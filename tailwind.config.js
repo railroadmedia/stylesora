@@ -15,9 +15,13 @@ module.exports = {
             },
             colors: {
                 drumeo: '#0B76DB',
+                'drumeo-light': '#2092ff',
                 pianote: '#F61A30',
+                'pianote-light': '#ff5258',
                 guitareo: '#00C9AC',
+                'guitareo-light': '#00fcd8',
                 'guitar-quest': '#FFB500',
+                'guitar-quest-light': '#ffc433',
                 'dark-blue': '#010611',
                 courses: '#07A0FF',
                 shows: '#0BBE76',
@@ -37,6 +41,9 @@ module.exports = {
                 '80': '20rem',
                 '92': '23rem'
             },
+            inset: {
+                '-full': '100%',
+            }
         },
         zIndex: {
             '0': 0,
@@ -52,15 +59,6 @@ module.exports = {
             '250': 250,
             'auto': 'auto'
         },
-        inset: {
-            '0': 0,
-            '1': '1rem',
-            '2': '2rem',
-            '3': '3rem',
-            '4': '4rem',
-            '5': '5rem',
-            auto: 'auto'
-        }
     },
     variants: {
         extend: {
