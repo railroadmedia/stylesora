@@ -14,13 +14,10 @@
   "homepage": "https://github.com/railroadmedia/stylesora/blob/main/README.md",
   "scripts": {
     "build:js": "./node_modules/.bin/webpack --mode production",
+    "build:css": "cross-env NODE_ENV=production postcss src/styles/styles.css -o dist/stylesora.css",
     "build:dev": "postcss src/styles/styles.css -o dist/stylesora.css",
-    "build:prod": "cross-env NODE_ENV=production postcss src/styles/styles.css -o dist/stylesora.css",
     "lib:watch": "nodemon -w tailwind.config.js -w src/styles -w js -e css,js -x npm run build:dev",
-    "lib:build": "npm run build:prod",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "docs:watch": "run-p lib:watch docs:dev"
+    "lib:build": "run-p build:js build:css"
   },
   "author": "Miguel Fondeur",
   "license": "MIT",
