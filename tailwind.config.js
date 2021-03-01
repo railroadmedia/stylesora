@@ -10,10 +10,13 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                'roboto-condensed': ['"Roboto Condensed"', 'sans-serif'],
-                'open-sans': ['"Open Sans"', 'sans-serif']
+                'roboto-condensed': ['"Roboto Condensed"', 'Segoe UI', 'sans-serif'],
+                'open-sans': ['"Open Sans"', 'Century Gothic', 'sans-serif'],
+                'bison-bold': ['"Bison Bold"', 'Impact'],
+                'permanent-marker': ['Permanent Marker', 'Brush Script MT', 'cursive']
             },
             colors: {
+                //Brands
                 drumeo: '#0B76DB',
                 'drumeo-light': '#2092ff',
                 pianote: '#F61A30',
@@ -21,13 +24,28 @@ module.exports = {
                 guitareo: '#00C9AC',
                 'guitareo-light': '#00fcd8',
                 'guitar-quest': '#FFB500',
-                'guitar-quest-light': '#ffc433',
-                'dark-blue': '#010611',
+                'guitar-quest-light': '#ffc433',  
+                //Content              
                 courses: '#07A0FF',
                 shows: '#0BBE76',
                 songs: '#F8004F',
                 'play-alongs': '#FFB500',
                 rudiments: '#FA6300',
+                //Grays
+                'warm-gray-100': '#EFF0F0',
+                'warm-gray-200': '#E5E6E8',
+                'warm-gray-300': '#CCD0D3',
+                'warm-gray-500': '#9EA1A6',
+                'warm-gray-700': '#4D5356',
+                'warm-gray-900': '#191B1C',
+                //Dark Mode
+                'mild-blue': '#7E9AB1',
+                'gray-blue': '#445F74',
+                'royal-blue': '#002039',
+                'dark-blue-1': '#081825',
+                'dark-blue-2': '#00101D',
+                'dark-blue-3': '#010611',
+                //UI
                 error: '#F71B26',
                 success: '#00BC75',
                 highlight: '#F3F9FF'
@@ -43,21 +61,14 @@ module.exports = {
             },
             inset: {
                 '-full': '100%',
+            },
+            zIndex: {
+                '75': 75,
+                '100': 100,
+                '150': 150,
+                '200': 200,
+                '250': 250,
             }
-        },
-        zIndex: {
-            '0': 0,
-            '10': 10,
-            '20': 20,
-            '30': 30,
-            '40': 40,
-            '50': 50,
-            '75': 75,
-            '100': 100,
-            '150': 150,
-            '200': 200,
-            '250': 250,
-            'auto': 'auto'
         },
     },
     variants: {
