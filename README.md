@@ -2,46 +2,54 @@
 
 Stylesora is a CSS package built on [tailwind](https://tailwindcss.com/docs) and [tailwind-ui](https://tailwindui.com/components). Along with these core packages, Stylesora also includes helpful patterns built with [tailwinds directives](https://tailwindcss.com/docs/functions-and-directives), which allows for faster prototyping and less class declarations. 
 
-## Officia Docs
+## Official Docs
 [https://musora-ui-docs.netlify.app/stylesora/](https://musora-ui-docs.netlify.app/stylesora/)
 
 ## Getting Started
-### Instalation
+
+#### Instalation
+<br>
+
 `npm i stylesora --save`
-#### In webpack.mix.js add the following:
+
+<br><hr>
+
+#### Configuration
+##### In webpack.mix.js add the following:
 
 ```js
-mix.postCss('node_modules/stylesora/dist/stylesora.css', 'public/assets/css/stylesora')
-   .purgeCss({
-        folders: ['resources', 'vendor/railroad', 'node_modules/vuesora'],
-        whitelistPatterns: [/guitareo/, /semester-pack/, /mce-/, /noty_/, /no-scroll/, /hide-/, /intercom-/, /flatpickr-/,
-            /cropper/, /stripe-element-container/, /StripeElement/, /icon-/, /numInput/, /flatpickr/, /cur-year/,
-            /numInput-/, /arrowUp/, /arrowDown/]
-    });
+mix.postCss('node_modules/stylesora/dist/stylesora.css', 'public/stylesora').purgeCss({
+    folders: ['resources', 'vendor/railroad', 'node_modules/vuesora'],
+    whitelistPatterns: [/guitareo/, /semester-pack/, /mce-/, /noty_/, /no-scroll/, /hide-/, /intercom-/, /flatpickr-/,
+        /cropper/, /stripe-element-container/, /StripeElement/, /icon-/, /numInput/, /flatpickr/, /cur-year/,
+        /numInput-/, /arrowUp/, /arrowDown/]
+});
 ```
+##### Include Stylesora in Template
 
-#### Compile Assets
-`npm run dev`
-
-#### Include Stylesora in Template
 ```html
-<link href="{{ asset('assets/css/stylesora/stylesora.css') }}" rel="stylesheet">
+<!-- Include in head -->
+<link href="{{ asset('/stylesora/stylesora.css') }}" rel="stylesheet">
 ```
 
-## Library Commands
-#### Compile and watch for Development
+<br><hr>
+#### Library Commands
+##### Compile and watch for Development
+<br>
 
 `yarn lib:watch`
-#### Build for Production
+##### Build for Production
+<br>
 
 `yarn lib:build`
 
-## Documentation
-#### Compile and watch Docs
-`yarn docs:watch`
-#### Build Docs
-`yarn docs:build`
+<br>
+<hr>
 
-## Developing in other Environments
-#### Run Symlink Command
+#### Developing in other Environments
+##### Run Symlink Command
+<br>
+
 `./link-stylesora.sh`
+
+<br>

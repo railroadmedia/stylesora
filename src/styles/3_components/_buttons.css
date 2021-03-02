@@ -38,11 +38,11 @@
     }
     .tw-btn-tertiary:active span,
     .tw-btn-tertiary:active i {
-        @apply tw-text-current;
+        @apply tw-text-white;
     }
     .tw-btn-tertiary:visited span,
     .tw-btn-tertiary:visited i {
-        @apply tw-text-current;
+        @apply tw-text-white;
     }
     .tw-btn-tertiary[disabled] {
         @apply tw-pointer-events-none tw-border-gray-400 tw-text-gray-400 !important;

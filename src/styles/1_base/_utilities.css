@@ -1,17 +1,19 @@
 @layer utilities {
-    .tw-scrolling-touch { 
-        -webkit-overflow-scrolling: touch; 
-    }
     /* For Lists */
     .tw-list-square {
         list-style-type: square;
     }
+
     /* 
     Necessary when using Vue and Alpine show/hide classes
     Tailwind utilities override them with !important 
     */
     .tw-soft-flex { display: flex; }
     .tw-soft-block { display: block; }
+
+    .tw-scrolling-touch { 
+        -webkit-overflow-scrolling: touch; 
+    }
     /* Hide Scrollbars */
     .tw-scrollbar-none::-webkit-scrollbar {
         display: none; /* Chrome */
