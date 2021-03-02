@@ -11,6 +11,14 @@
     .tw-soft-flex { display: flex; }
     .tw-soft-block { display: block; }
 
+    .tw-scrolling-smooth {
+        scroll-behavior: smooth;
+    }
+    @media (prefers-reduced-motion) {
+        .tw-scrolling-smooth {
+            scroll-behavior: auto;
+        }
+    }
     .tw-scrolling-touch { 
         -webkit-overflow-scrolling: touch; 
     }
