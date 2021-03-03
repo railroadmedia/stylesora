@@ -10,6 +10,6 @@
 /* Bison Bold */
 @font-face {
     font-family: 'Bison Bold';
-    src: url(https://musora-ui.s3.amazonaws.com/fonts/Bison-Bold.ttf);
+    src: url('https://musora-ui.s3.amazonaws.com/fonts/Bison-Bold.ttf');
     font-weight: bold;
 }
