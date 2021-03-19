@@ -4,8 +4,6 @@ function Page() {
         //data
         modalOpen: false, 
         sidebarOpen: false, 
-        levelMap: false, 
-        levelModalOpen: false,
         showCookieBanner: true,
         cookieName: 'cookiesEnabled',
         //methods
