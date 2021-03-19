@@ -3,7 +3,7 @@ const MergeIntoSingle = require('webpack-merge-and-include-globally');
 const uglifyJS = require('uglify-js');
 
 module.exports = {
-  entry: './src/js/index.js',
+  entry: './src/js/',
   output: {
     path: path.resolve(__dirname, 'dist')
   },
