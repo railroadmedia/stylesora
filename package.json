@@ -3,7 +3,7 @@
   "version": "1.0.18",
   "description": "A CSS package for styling Musora's websites and web applications with ease. Includes Tailwind CSS as well as custom patterns for rapid prototyping and development.",
   "files": [
-    "dist/**/*"
+    "dist/**/*","plugins/*"
   ],
   "main": "dist/index.js",
   "style": "dist/stylesora.css",
@@ -14,8 +14,8 @@
   "homepage": "https://github.com/railroadmedia/stylesora/blob/main/README.md",
   "scripts": {
     "build:js": "./node_modules/.bin/webpack --mode production",
-    "build:css": "cross-env NODE_ENV=production postcss src/styles/styles.css -o dist/stylesora.css",
-    "build:dev": "postcss src/styles/styles.css -o dist/stylesora.css",
+    "build:css": "cross-env NODE_ENV=production postcss src/styles/tailwind.css -o dist/stylesora.css",
+    "build:dev": "postcss src/styles/tailwind.css -o dist/stylesora.css",
     "lib:watch": "nodemon -w tailwind.config.js -w src/styles -w js -e css,js -x npm run build:dev",
     "lib:build": "run-p build:js build:css"
   },

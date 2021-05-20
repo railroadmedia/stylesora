@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/stylesora.css">
+    <title>Stylesora Demo</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://dpwjbsxqtam5n.cloudfront.net/fonts/font-awesome-5/fontawesome-all.min.css">
+    <!-- Custom Icons -->
+    <link rel="stylesheet" href="https://dpwjbsxqtam5n.cloudfront.net/fonts/icons.css">
+    <!-- Google Font: Open Sans -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Permanent+Marker&family=Roboto+Condensed:wght@300;400;700&display=swap">
+    <!-- Google Font: Roboto Condensed -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap">
+    <!-- Google Font: Permanent Marker -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap">
+    <!-- Styles -->
+    <style>
+        /* Bison Bold */
+        @font-face {
+            font-family: 'Bison Bold';
+            src: url('https://musora-ui.s3.amazonaws.com/fonts/Bison-Bold.ttf');
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="tw-min-h-screen tw-flex tw-flex-col"> 
+    <header class="tw-w-full">
+        <nav class="tw-flex tw-h-16 tw-bg-blue-500 tw-items-center tw-text-white tw-sticky tw-top-0">
+            <ul class="tw-mx-auto tw-container tw-flex">
+                <li class="tw-mr-auto tw-text-2xl"><a href="#top">Stylesora</a></li>
+                <li><a class="tw-px-2" href="#base">Base</a></li>
+                <li><a class="tw-px-2" href="#">Utilities</a></li>
+                <li><a class="tw-px-2" href="#">Components</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="tw-w-full tw-flex-grow">
+        <div class="tw-mx-auto tw-container">
+            <!-- Title -->
+            <section id="top" class="tw-p-12">
+                <h1 class="tw-mb-20 tw-text-4xl tw-text-center tw-font-medium tw-text-gray-600">Stylesora Demo</h1>
+            </section>
+            <!-- Base -->
+            <section id="base" class="tw-p-12">
+                <h2 class="tw-mb-20 tw-text-4xl tw-text-center tw-font-medium tw-text-gray-600">Base</h2>
+                <h3>Typography</h3><hr><br>
+                <h5 class="tw-font-bold tw-text-gray-600">Fonts</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    <h3 class="tw-font-open-sans">This is Open Sans. Our main typeface.</h3>
+                    <h3 class="tw-font-roboto-condensed tw-uppercase">Roboto Condensed is our supporting typeface</h3>
+                    <h3 class="tw-font-permanent-marker tw-uppercase tw-font-normal">Permanent Marker is used for emphasis.</h3>
+                    <h3 class="tw-font-bison-bold tw-uppercase">Bison Bold is used for the Guitar Quest Experience.</h3>
+                </div>
+                <h5 class="tw-font-bold tw-text-gray-600">Type Scale</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    <h1>Header One</h1>
+                    <h2>Header Two</h2>
+                    <h3>Header Three</h3>
+                    <h4>Header Four</h4>
+                    <h5>Header Five</h5>
+                    <h6>Header Six</h6>
+                    <p>Paragraphs</p>
+                </div>
+                <h5 class="tw-font-bold tw-text-gray-600">Lists</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    <ul>
+                        <li>item one</li>
+                        <li>item two</li>
+                        <li>item three</li>
+                    </ul>
+                    <ol>
+                        <li>item one</li>
+                        <li>item two</li>
+                        <li>item three</li>
+                    </ol>
+                </div>
+                <h5 class="tw-font-bold tw-text-gray-600">Links & Variants</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    <p>Text with <a href="#">Link</a></p><br>
+                    <p>Capitalize on low hanging fruit to <i>identify</i> a <s>ballpark</s> value added activity to <b>beta test</b>. Override the digital divide with additional clickthroughs from Dev<sup>Ops</sup>. <b><u>Nanotechnology immersion</u></b> along the <b><i>information highway</i></b> will close the loop on focusing solely on the <sub>bottom</sub> line.</p>
+                </div>
+
+            </section>
+            <!-- Utilities -->
+            <section id="utilities" class="tw-p-12">
+                <h2 class="tw-mb-20 tw-text-4xl tw-text-center tw-font-medium tw-text-gray-600">Utilities</h2>
+            </section>
+            <!-- Components-->
+            <section id="components" class="tw-p-12">
+                <h2 class="tw-mb-20 tw-text-4xl tw-text-center tw-font-medium tw-text-gray-600">Components</h2>
+                
+                <h3>Buttons</h3><hr><br>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Primary Buttons</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    <a href="#" class="tw-btn-primary tw-bg-drumeo">
+                        <span>Drumeo</span>
+                    </a>
+                    <a href="#" class="tw-btn-primary tw-bg-guitareo">
+                        <span>Guirateo</span>
+                    </a>
+                    <a href="#" class="tw-btn-primary tw-bg-pianote">
+                        <span>Pianote</span>
+                    </a>
+                    <a href="#" class="tw-btn-primary tw-bg-singeo">
+                        <i class="fa fa-play tw-pr-1" aria-hidden="true"></i>
+                        <span>With Icon</span>
+                    </a>
+                    <a href="#" class="tw-btn-primary" disabled>
+                        <span>Disabled</span>
+                    </a>
+                </div>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Secondary Buttons</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-2">
+                    <a href="#" class="tw-btn-secondary tw-text-drumeo">
+                        <span>Drumeo</span>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-text-guitareo">
+                        <span>Guirateo</span>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-text-pianote">
+                        <span>Pianote</span>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-text-singeo">
+                        <i class="fa fa-random tw-pr-1" aria-hidden="true"></i>
+                        <span>With Icon</span>
+                    </a>
+                    <a href="#" class="tw-btn-secondary" disabled>
+                        <span>Disabled</span>
+                    </a>
+                </div>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Tertiary Buttons</h5>
+                <div class="tw-p-4 tw-bg-gray-700 tw-my-2">
+                    <a href="#" class="tw-btn-tertiary hover:tw-text-drumeo">
+                        <span>Drumeo</span>
+                    </a>
+                    <a href="#" class="tw-btn-tertiary hover:tw-text-guitareo">
+                        <span>Guirateo</span>
+                    </a>
+                    <a href="#" class="tw-btn-tertiary hover:tw-text-pianote">
+                        <span>Pianote</span>
+                    </a>
+                    <a href="#" class="tw-btn-tertiary hover:tw-text-singeo">
+                        <i class="fa fa-check tw-pr-1" aria-hidden="true"></i>
+                        <span>With Icon</span>
+                    </a>
+                    <a href="#" class="tw-btn-tertiary" disabled>
+                        <span>Disabled</span>
+                    </a>
+                </div>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Icon Buttons</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-2">
+                    <a href="#" class="tw-btn-icon tw-text-drumeo">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="tw-btn-icon tw-text-pianote">
+                        <i class="fa fa-pause" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="tw-btn-icon tw-text-guitareo">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="tw-btn-icon tw-text-singeo">
+                        <i class="fa fa-random" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="tw-btn-icon" disabled>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+            </section>
+        </div>
+    </main>
+    <footer class="tw-w-full tw-bg-gray-200 tw-p-4">
+        <div class="tw-mx-auto tw-container">
+
+        </div>
+    </footer>
+</body>
+</html>
