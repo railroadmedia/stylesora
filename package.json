@@ -3,8 +3,7 @@
   "version": "1.0.19",
   "description": "A CSS package for styling Musora's websites and web applications with ease. Includes Tailwind CSS as well as custom patterns for rapid prototyping and development.",
   "files": [
-    "dist/**/*",
-    "plugins/*"
+    "dist/**/*"
   ],
   "main": "dist/index.js",
   "style": "dist/stylesora.css",
@@ -32,6 +31,7 @@
     "postcss": "^8.2.4",
     "postcss-import": "^14.0.0",
     "postcss-nested": "^5.0.3",
+    "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.2",
     "uglify-js": "^3.13.1",
     "vuepress": "^1.8.0",
@@ -39,10 +39,8 @@
     "webpack-cli": "^4.5.0",
     "webpack-merge-and-include-globally": "^2.3.4"
   },
-  "dependencies": {
-    "postcss-cli": "^8.3.1"
-  },
   "engines": {
-    "node": ">=12.13.0"
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   }
 }

@@ -1,4 +1,4 @@
-const stylesoraTheme = require('./plugins/theme');
+const stylesoraTheme = require('./theme');
 
 module.exports = {
     // mode: 'jit',
@@ -28,9 +28,9 @@ module.exports = {
         }
     },
     plugins: [
-        require('./plugins/base')(),
-        require('./plugins/utilities/')(),
-        require('./plugins/components/')(),
+        require('./base')(),
+        require('./utilities/')(),
+        require('./components/')(),
     ],
 };
 
