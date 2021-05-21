@@ -8,11 +8,8 @@ Stylesora is a set of [tailwind](https://tailwindcss.com/docs) plugins for Musor
 ## Getting Started
 
 #### Instalation
-<br>
 
 `yarn add Stylesora`
-
-<br><hr>
 
 #### Adding Stylesora's theme settings
 
@@ -52,24 +49,16 @@ module.exports = {
 }
 ```
 
-<br><hr>
 #### Library Commands
 ##### Compile and watch for Development
-<br>
 
 `yarn lib:watch`
 ##### Build for Production
-<br>
 
 `yarn lib:build`
 
-<br>
-<hr>
-
 #### Developing in other Environments
 ##### Run Symlink Command
-<br>
 
 `./link-stylesora.sh`
 
-<br>
