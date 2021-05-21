@@ -42,9 +42,12 @@ module.exports = {
         //theme settings
      }
      plugins: [
-        require('./base')(),
-        require('./utilities/')(),
-        require('./components/')(),
+        //Stylesora's Base Styles
+        require('stylesora/base')(),
+        //Stylesora's Utility Classes
+        require('stylesora/utilities/')(),
+        //Stylesora's Component Styles
+        require('stylesora/components/')(),
     ],
 }
 ```
