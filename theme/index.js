@@ -17,6 +17,7 @@ module.exports = {
         drumeo: {
             gray: '#F3F4F5',
             light: '#B2D4F4',
+            hover: '#258FF4',
             DEFAULT: '#0B76DB',
             dark: '#112E4A',
             black: '#13171B'
@@ -24,6 +25,7 @@ module.exports = {
         pianote: {
             gray: '#F6F5F5',
             light: '#FCB8BF',
+            hover: '#F73346',
             DEFAULT: '#F61A30',
             dark: '#55171D',
             black: '#201617'
@@ -31,6 +33,7 @@ module.exports = {
         guitareo: {
             gray: '#F2F4F3',
             light: '#A8EDE3',
+            hover: '#00E3C2',
             DEFAULT: '#00C9AC',
             dark: '#0C443C',
             black: '#101817'
@@ -38,6 +41,7 @@ module.exports = {
         singeo: {
             gray: '#F4F3F5',
             light: '#DAB3F8',
+            hover: '#A100FF',
             DEFAULT: '#8300E9',
             dark: '#320E4F',
             black: '#18131C'
