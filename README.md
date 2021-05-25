@@ -1,6 +1,6 @@
 # Stylesora
 
-Stylesora is a CSS package built on [tailwind](https://tailwindcss.com/docs) and [tailwind-ui](https://tailwindui.com/components). Along with these core packages, Stylesora also includes helpful patterns built with [tailwinds directives](https://tailwindcss.com/docs/functions-and-directives), which allows for faster prototyping and less class declarations. 
+Stylesora is a set of [tailwind](https://tailwindcss.com/docs) plugins for Musora's web applications. Stylesoras plugins provide helpful patterns for faster prototyping and less class declarations. 
 
 ## Official Docs
 [https://musora-ui-docs.netlify.app/stylesora/](https://musora-ui-docs.netlify.app/stylesora/)
@@ -8,48 +8,60 @@ Stylesora is a CSS package built on [tailwind](https://tailwindcss.com/docs) and
 ## Getting Started
 
 #### Instalation
-<br>
 
-`npm i stylesora --save`
+`yarn add Stylesora`
 
-<br><hr>
-
-#### Configuration
-##### In webpack.mix.js add the following:
+#### Adding Stylesora's theme settings
 
 ```js
-mix.postCss('node_modules/stylesora/dist/stylesora.css', 'public/stylesora').purgeCss({
-    folders: ['resources', 'vendor/railroad', 'node_modules/vuesora'],
-    whitelistPatterns: [/guitareo/, /semester-pack/, /mce-/, /noty_/, /no-scroll/, /hide-/, /intercom-/, /flatpickr-/,
-        /cropper/, /stripe-element-container/, /StripeElement/, /icon-/, /numInput/, /flatpickr/, /cur-year/,
-        /numInput-/, /arrowUp/, /arrowDown/]
-});
-```
-##### Include Stylesora in Template
+//tailwind.config.js
+const stylesoraTheme = require('stylesora/theme');
 
-```html
-<!-- Include in head -->
-<link href="{{ asset('/stylesora/stylesora.css') }}" rel="stylesheet">
+module.exports = {
+  theme: {
+      extend: {
+        colors: {
+            drumeo: stylesoraTheme.colors.drumeo,
+            guitareo: stylesoraTheme.colors.guitareo,
+            pianote: stylesoraTheme.colors.pianote,
+            singeo: stylesoraTheme.colors.singeo,
+        },
+        spacing: stylesoraTheme.spacing,
+        zIndex: stylesoraTheme.zIndex,
+      },
+   }
+}
 ```
 
-<br><hr>
+##### Adding Stylesora's components
+
+```js
+//tailwind.config.js
+module.exports = {
+     theme: {
+        //theme settings
+     }
+     plugins: [
+        //Stylesora's Base Styles
+        require('stylesora/base')(),
+        //Stylesora's Utility Classes
+        require('stylesora/utilities/')(),
+        //Stylesora's Component Styles
+        require('stylesora/components/')(),
+    ],
+}
+```
+
 #### Library Commands
 ##### Compile and watch for Development
-<br>
 
 `yarn lib:watch`
 ##### Build for Production
-<br>
 
 `yarn lib:build`
 
-<br>
-<hr>
-
 #### Developing in other Environments
 ##### Run Symlink Command
-<br>
 
 `./link-stylesora.sh`
 
-<br>
