@@ -56,6 +56,7 @@ module.exports = (theme) => {
         //Tertiary
         '.btn-tertiary': {
             borderColor: 'white',
+            backgroundColor: 'transparent',
             '&:hover': {
                 backgroundColor: 'white',
                 color: 'black',

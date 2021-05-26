@@ -16,6 +16,7 @@ module.exports = {
         //Brands Colors
         drumeo: {
             gray: '#F3F4F5',
+            lightest: '#EAF5FF',
             light: '#B2D4F4',
             hover: '#258FF4',
             DEFAULT: '#0B76DB',
@@ -24,6 +25,7 @@ module.exports = {
         },
         pianote: {
             gray: '#F6F5F5',
+            lightest: '#FEF2F2',
             light: '#FCB8BF',
             hover: '#F73346',
             DEFAULT: '#F61A30',
@@ -32,6 +34,7 @@ module.exports = {
         },
         guitareo: {
             gray: '#F2F4F3',
+            lightest: '#E3F8F5',
             light: '#A8EDE3',
             hover: '#00E3C2',
             DEFAULT: '#00C9AC',
@@ -40,6 +43,7 @@ module.exports = {
         },
         singeo: {
             gray: '#F4F3F5',
+            lightest: '#F2DBFF',
             light: '#DAB3F8',
             hover: '#A100FF',
             DEFAULT: '#8300E9',
