@@ -61,6 +61,9 @@ module.exports = (theme) => {
                 color: 'black',
                 textDecoration: 'none',
             },
+            '&:hover i, &:hover span': {
+                color: 'currentColor'
+            },
             '&:active': { backgroundColor: 'currentColor' },
             '&:active span,&:active i, &:visited span, &:visited i': { color: 'white' },
             '&[disabled]': {
