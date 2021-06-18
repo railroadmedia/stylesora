@@ -6,11 +6,13 @@ const modals = require('./_modals');
 
 module.exports = () => {
     return function({ theme, addComponents }) {
-        addComponents([
-            buttons(theme),
-            tooltips(theme),
-            lists(theme),
-            modals(theme),
-        ]);
+        addComponents(
+            [
+                buttons(theme),
+                tooltips(theme),
+                lists(theme),
+                modals(theme),
+            ], { variants: ['responsive'] } 
+        );
     }
 }
