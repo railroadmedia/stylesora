@@ -1,4 +1,5 @@
 const stylesoraTheme = require('./theme');
+const colors = require('tailwindcss/colors');
 
 module.exports = {
     // mode: 'jit',
@@ -20,7 +21,8 @@ module.exports = {
                 drumeo: stylesoraTheme.colors.drumeo,
                 pianote: stylesoraTheme.colors.pianote,
                 guitareo: stylesoraTheme.colors.guitareo,
-                singeo: stylesoraTheme.colors.singeo
+                singeo: stylesoraTheme.colors.singeo,
+                "true-gray": colors.trueGray
             },
             spacing: stylesoraTheme.spacing,
             zIndex: stylesoraTheme.zIndex,

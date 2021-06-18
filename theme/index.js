@@ -7,7 +7,7 @@ module.exports = {
     //FONTS
     fontFamily: {
         'roboto-condensed': ['"Roboto Condensed"', 'Segoe UI', 'sans-serif'],
-        'open-sans': ['"Open Sans"', 'Century Gothic', 'sans-serif'],
+        primary: ['"Open Sans"', 'Century Gothic', 'sans-serif'],
         'bison-bold': ['"Bison Bold"', 'Impact'],
         'permanent-marker': ['Permanent Marker', 'Brush Script MT', 'cursive']
     },
@@ -96,14 +96,28 @@ module.exports = {
     },
     //Z-INDEX
     zIndex: {
+        '0': 0,
+        '10': 10,
+        '20': 20,
+        '30': 30,
+        '40': 40,
+        '50': 50,
         '75': 75,
         '100': 100,
         '150': 150,
         '200': 200,
         '250': 250,
+        'auto': 'auto'
     },
     //INSETS
     inset: {
+        '0': 0,
+        '1': '1rem',
+        '2': '2rem',
+        '3': '3rem',
+        '4': '4rem',
+        '5': '5rem',
+        auto: 'auto',
         '-full': '100%',
     },
 }
