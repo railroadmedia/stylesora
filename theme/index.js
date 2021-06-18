@@ -86,7 +86,7 @@ module.exports = {
     },
     //FONT SIZES
     fontSize: {
-        '13': ['13px', '16.25'],
+        '13': ['13px', '16.25px'],
         '32': ['32px', '1.5'],
     },
     //SPACING
