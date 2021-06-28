@@ -21,7 +21,9 @@ module.exports = (theme) => {
             fontFamily: theme('fontFamily.primary'),
             fontSize: theme('fontSize.xs'),
             fontWeight: 400,
-            padding: ` ${theme('padding.2')} ${theme('padding.4')} `,
+            lineHeight: '15px',
+            maxWidth: '186px',
+            padding: '5px',
             position: 'absolute',
             textTransform: 'initial',
             top: 'calc(100% + 10px)',
@@ -42,21 +44,21 @@ module.exports = (theme) => {
         '.tooltip-center': {
             justifyContent: 'center !important',
 
-            '& .tooltip::after': {
+            '& > .tooltip::after': {
                 right: 'calc(50% - 3.5px) !important'
             }
         },
         '.tooltip-left': {
             justifyContent: 'flex-start !important',
 
-            '& .tooltip::after': {
+            '& > .tooltip::after': {
                 left: '14px !important'
             }
         },
         '.tooltip-right': {
             justifyContent: 'flex-end !important',
 
-            '& .tooltip::after': {
+            '& > .tooltip::after': {
                 right: '14px !important'
             }
         },

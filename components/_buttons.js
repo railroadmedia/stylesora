@@ -5,7 +5,7 @@ module.exports = (theme) => {
             borderStyle: 'solid',
             borderRadius: theme('borderRadius.full'),
             borderWidth: theme('borderWidth.2'),
-            lineHeight: '1',
+            lineHeight: '30px',
             position: 'relative',
             transitionDuration: '150ms',
             transitionProperty: 'background-color, color, fill, stroke, opacity, box-shadow, transform',
@@ -25,8 +25,8 @@ module.exports = (theme) => {
             fontFamily: '"Roboto Condensed", Segoe UI, sans-serif',
             fontSize: '1rem',
             fontWeight: '700',
-            height: '50px',
-            padding: '0 1rem',
+            minHeight: '50px',
+            padding: '8px 24px',
             textDecoration: 'none',
             textTransform: 'uppercase',
         },
@@ -42,6 +42,19 @@ module.exports = (theme) => {
                 pointerEvents:'none',
                 backgroundColor: theme('backgroundColor.gray.200'),
                 color: theme('textColor.gray.400'),
+            },
+            //Brand Specific
+            '&.bg-drumeo:hover': {
+                backgroundColor: theme('backgroundColor.drumeo.hover') + '!important',
+            },
+            '&.bg-pianote:hover': {
+                backgroundColor: theme('backgroundColor.pianote.hover') + '!important',
+            },
+            '&.bg-guitareo:hover': {
+                backgroundColor: theme('backgroundColor.guitareo.hover') + '!important',
+            },
+            '&.bg-singeo:hover': {
+                backgroundColor: theme('backgroundColor.singeo.hover') + '!important',
             }
         },
     
@@ -101,7 +114,9 @@ module.exports = (theme) => {
         
         //Small
         '.btn-small': {
-            height: '34px !important'
+            height: '34px !important',
+            minHeight: 'auto',
+            fontSize: '14px'
         },
         '.btn-icon.btn-small': {
             width: '34px !important'
