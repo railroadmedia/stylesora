@@ -12,7 +12,6 @@ module.exports = (theme) => {
             transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)',
             userSelect: 'none',
             whiteSpace: 'nowrap',
-
             '& *': {
                 margin: '0 auto',
             }
@@ -91,34 +90,17 @@ module.exports = (theme) => {
                 pointerEvents:'none',
             }
         },
-    
-        //Icon
-        '.btn-icon': {  
-            alignItems: 'center',
-            borderColor: 'currentColor',
-            display: 'inline-flex',
-            justifyContent: 'center',
-            width: '50px',
-            height: '50px',
-            '&:hover': {
-                backgroundColor: 'hsla(0,0%,49.4%,.05)',
-                borderColor: 'currentColor'
-            },
-            '&:active span, tw-btn-icon:active i, &:visited span, &:visited i': {color: 'currentColor' },
-            '&[disabled]': {
-                pointerEvents:'none',
-                borderColor: theme('borderColor.gray.400'),
-                color: theme('textColor.gray.400'),
-            }
-        }, 
         
-        //Small
+        //Button Variants,
+        '.btn-circle': {
+            width: '50px !important'
+        },
         '.btn-small': {
             height: '34px !important',
             minHeight: 'auto',
             fontSize: '14px'
         },
-        '.btn-icon.btn-small': {
+        '.btn-circle.btn-small': {
             width: '34px !important'
         }
     }
