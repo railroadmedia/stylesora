@@ -93,6 +93,7 @@ module.exports = (theme) => {
         
         //Button Variants,
         '.btn-circle': {
+            padding: '0 !important',
             width: '50px !important'
         },
         '.btn-small': {
@@ -100,7 +101,7 @@ module.exports = (theme) => {
             minHeight: 'auto',
             fontSize: '14px'
         },
-        '.btn-circle.btn-small': {
+        '.btn-small.btn-circle': {
             width: '34px !important'
         }
     }
