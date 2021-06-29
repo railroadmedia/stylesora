@@ -18,7 +18,7 @@
     "build:css": "cross-env NODE_ENV=production postcss docs/src/styles/tailwind.css -o docs/dist/stylesora.css",
     "build:dev": "postcss docs/src/styles/tailwind.css -o docs/dist/stylesora.css",
     "lib:watch": "nodemon -w tailwind.config.js -w docs/src/styles -w js -e css,js -x npm run build:dev",
-    "lib:build": "run-p build:css"
+    "lib:build": "build:css"
   },
   "author": "Miguel Fondeur",
   "license": "MIT",
@@ -27,7 +27,6 @@
     "autoprefixer": "^10.2.3",
     "cross-env": "^7.0.3",
     "nodemon": "^2.0.7",
-    "npm-run-all": "^4.1.5",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.0",
