@@ -5,7 +5,7 @@ module.exports = {
         require('postcss-import'),
         require('tailwindcss')('tailwind.config.js'),
         require('postcss-nested'),
-        process.env.NODE_ENV === 'production' ? require('autoprefixer') : null,
-        process.env.NODE_ENV === 'production' ? cssnano({ preset: 'default' }) : null,
+        // process.env.NODE_ENV === 'production' ? require('autoprefixer') : null,
+        // process.env.NODE_ENV === 'production' ? cssnano({ preset: 'default' }) : null,
     ]
 }
