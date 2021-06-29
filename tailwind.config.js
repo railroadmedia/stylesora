@@ -1,4 +1,4 @@
-const stylesoraTheme = require('./theme');
+const stylesoraTheme = require('./lib/theme');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
@@ -32,9 +32,9 @@ module.exports = {
         }
     },
     plugins: [
-        require('./base')(),
-        require('./utilities/')(),
-        require('./components/')(),
+        require('./lib/base')(),
+        require('./lib/utilities')(),
+        require('./lib/components')(),
     ],
 };
 
