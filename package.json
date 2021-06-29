@@ -15,9 +15,9 @@
   },
   "homepage": "https://github.com/railroadmedia/stylesora/blob/main/README.md",
   "scripts": {
-    "build:css": "cross-env NODE_ENV=production postcss docs/src/styles/tailwind.css -o docs/dist/stylesora.css",
-    "build:dev": "postcss docs/src/styles/tailwind.css -o docs/dist/stylesora.css",
-    "lib:watch": "nodemon -w tailwind.config.js -w docs/src/styles -w js -e css,js -x npm run build:dev",
+    "build:css": "cross-env NODE_ENV=production postcss sandbox/src/styles/tailwind.css -o sandbox/dist/stylesora.css",
+    "build:dev": "postcss sandbox/src/styles/tailwind.css -o sandbox/dist/stylesora.css",
+    "lib:watch": "nodemon -w tailwind.config.js -w sandbox/src/styles -w js -e css,js -x npm run build:dev",
     "lib:build": "yarn build:css"
   },
   "author": "Miguel Fondeur",
