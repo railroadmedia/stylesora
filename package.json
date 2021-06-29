@@ -1,9 +1,14 @@
 {
   "name": "stylesora",
-  "version": "1.0.32",
+  "version": "1.0.30",
   "description": "A CSS package for styling Musora's websites and web applications with ease. Includes Tailwind CSS as well as custom patterns for rapid prototyping and development.",
   "main": "index.js",
-  "style": "dist/stylesora.css",
+  "files": [
+    "./lib/"
+  ],
+  "exports": {
+    "./": "./lib/"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/railroadmedia/stylesora"

@@ -17,11 +17,13 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: stylesoraTheme.fontFamily,
+            fontSize: stylesoraTheme.fontSize, 
             colors: {
                 drumeo: stylesoraTheme.colors.drumeo,
                 pianote: stylesoraTheme.colors.pianote,
                 guitareo: stylesoraTheme.colors.guitareo,
                 singeo: stylesoraTheme.colors.singeo,
+                recordeo: stylesoraTheme.colors.recordeo,
                 "true-gray": colors.trueGray
             },
             spacing: stylesoraTheme.spacing,
