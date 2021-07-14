@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/stylesora.css">
+    <title>Stylesora Demo</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://dpwjbsxqtam5n.cloudfront.net/fonts/font-awesome-5/fontawesome-all.min.css">
+    <!-- Custom Icons -->
+    <link rel="stylesheet" href="https://dpwjbsxqtam5n.cloudfront.net/fonts/icons.css">
+    <!-- Google Font: Open Sans -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Permanent+Marker&family=Roboto+Condensed:wght@300;400;700&display=swap">
+    <!-- Alpine -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- Styles -->
+    <style>
+        /* Bison Bold */
+        @font-face {
+            font-family: 'Bison Bold';
+            src: url('https://musora-ui.s3.amazonaws.com/fonts/Bison-Bold.ttf');
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="tw-min-h-screen tw-flex tw-flex-col"> 
+    <header class="tw-w-full">
+        <nav class="tw-flex tw-h-16 tw-bg-blue-500 tw-items-center tw-text-white tw-sticky tw-top-0">
+            <ul class="tw-mx-auto tw-container tw-flex">
+                <li class="tw-mr-auto tw-text-2xl"><a href="#top">Stylesora</a></li>
+                <li><a class="tw-px-2" href="#base">Base</a></li>
+                <li><a class="tw-px-2" href="#">Utilities</a></li>
+                <li><a class="tw-px-2" href="#">Components</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="tw-w-full tw-flex-grow">
+        <div class="tw-mx-auto tw-container">
+            <!-- Title -->
+            <section id="top" class="tw-p-12">
+                <h1 class="tw-mb-20 tw-text-4xl tw-text-center tw-font-medium tw-text-gray-600">Stylesora Demo</h1>
+            </section>
+            <!-- Base -->
+            <section id="base" class="tw-p-12">
+                <h2 class="tw-mb-20 tw-text-4xl tw-text-center tw-font-medium tw-text-gray-600">Base</h2>
+                <h3>Typography</h3><hr><br>
+                <h5 class="tw-font-bold tw-text-gray-600">Fonts</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    <h3 class="tw-font-open-sans">This is Open Sans. Our main typeface.</h3>
+                    <h3 class="tw-font-roboto-condensed tw-uppercase">Roboto Condensed is our supporting typeface</h3>
+                    <h3 class="tw-font-permanent-marker tw-uppercase tw-font-normal">Permanent Marker is used for emphasis.</h3>
+                    <h3 class="tw-font-bison-bold tw-uppercase">Bison Bold is used for the Guitar Quest Experience.</h3>
+                </div>
+                <h5 class="tw-font-bold tw-text-gray-600">Type Scale</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    <div class="tw-py-4 tw-border-b bw-border-gray-400 tw-flex"><h1 class="tw-leading-none">Heading One</h1> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">h1</i>tw-text-4xl</div></div>
+                    <div class="tw-py-4 tw-border-b bw-border-gray-400 tw-flex"><h1 class="tw-leading-none tw-text-32">Musora Heading</h1> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">h1</i>tw-text-32</div></div>
+                    <div class="tw-py-4 tw-border-b bw-border-gray-400 tw-flex"><h2 class="tw-leading-none">Heading Two</h2> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">h2</i>tw-text-3xl</div></div>
+                    <div class="tw-py-4 tw-border-b bw-border-gray-400 tw-flex"><h3 class="tw-leading-none">Heading Three</h3> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">h3</i>tw-text-2xl</div></div>
+                    <div class="tw-py-4 tw-border-b bw-border-gray-400 tw-flex"><h4 class="tw-leading-none">Heading Four</h4> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">h4</i>tw-text-xl</div></div>
+                    <div class="tw-py-4 tw-border-b bw-border-gray-400 tw-flex"><h5 class="tw-leading-none">Heading Five</h5> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">h5</i>tw-text-lg</div></div>
+                    <div class="tw-py-4 tw-border-b bw-border-gray-400 tw-flex"><h6 class="tw-leading-none">Heading Six</h6> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">h6</i>tw-text-base</div></div>
+                    <div class="tw-py-4 tw-border-b bw-border-gray-400 tw-flex"><p class="tw-leading-none tw-text-base">Paragraphs</p> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">p</i>tw-text-base</div></div>
+                    <div class="tw-py-4 tw-border-b bw-border-gray-400 tw-flex"><p class="tw-leading-none tw-text-sm">Paragraph Small</p> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">p</i>tw-text-sm</div></div>
+                    <div class="tw-py-4 tw-border-b bw-border-gray-400 tw-flex"><p class="tw-leading-none tw-text-13">Musora Base Size</p> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">p</i>tw-text-13</div></div>
+                    <div class="tw-py-4 tw-border-b bw-border-gray-400 tw-flex"><p class="tw-leading-none tw-text-xs">Paragraph Extra Small</p> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">p</i>tw-text-xs</div></div>
+                    <div class="tw-py-4 tw-border-b bw-border-gray-400 tw-flex"><h3 class="tw-title tw-font-normal tw-leading-none">Title</h3> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">h3</i>tw-text-2xl tw-font-normal</div></div>
+                    <div class="tw-py-4 tw-flex"><p class="tw-font-roboto-condensed tw-font-bold tw-uppercase tw-leading-none">Buttons</p> <div class="tw-pl-6 tw-ml-auto tw-items-center tw-inline-flex tw-text-sm tw-text-gray-500"><i class="tw-pr-2">p</i>tw-font-roboto-condensed tw-font-bold</div></div>
+                </div>
+                <h5 class="tw-font-bold tw-text-gray-600">Lists</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    <ul class="tw-list-disc">
+                        <li>item one</li>
+                        <li>item two</li>
+                        <li>item three</li>
+                    </ul>
+                    <ul class="tw-list-square">
+                        <li>item one</li>
+                        <li>item two</li>
+                        <li>item three</li>
+                    </ul>
+                    <ol class="tw-list-decimal">
+                        <li>item one</li>
+                        <li>item two</li>
+                        <li>item three</li>
+                    </ol>
+                </div>
+                <h5 class="tw-font-bold tw-text-gray-600">Links & Variants</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    <p>Text with <a href="#">Link</a></p><br>
+                    <p>Capitalize on low hanging fruit to <i>identify</i> a <s>ballpark</s> value added activity to <b>beta test</b>. Override the digital divide with additional clickthroughs from Dev<sup>Ops</sup>. <b><u>Nanotechnology immersion</u></b> along the <b><i>information highway</i></b> will close the loop on focusing solely on the <sub>bottom</sub> line.</p>
+                </div>
+
+            </section>
+            <!-- Utilities -->
+            <section id="utilities" class="tw-p-12">
+                <h2 class="tw-mb-20 tw-text-4xl tw-text-center tw-font-medium tw-text-gray-600">Utilities</h2>
+            </section>
+            <!-- Components-->
+            <section id="components" class="tw-p-12">
+                <h2 class="tw-mb-20 tw-text-4xl tw-text-center tw-font-medium tw-text-gray-600">Components</h2>
+                
+                <h3>Buttons</h3><hr><br>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Primary Buttons</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    <a href="#" class="tw-btn-primary tw-bg-drumeo">
+                        <span>Drumeo</span>
+                    </a>
+                    <a href="#" class="tw-btn-primary tw-bg-guitareo">
+                        <span>Guirateo</span>
+                    </a>
+                    <a href="#" class="tw-btn-primary tw-bg-pianote">
+                        <span>Pianote</span>
+                    </a>
+                    <a href="#" class="tw-btn-primary tw-bg-singeo">
+                        <span>
+                            <i class="fa fa-play tw-pr-2" aria-hidden="true"></i>
+                            With Icon
+                        </span>
+                    </a>
+                    <a href="#" class="tw-btn-primary" disabled>
+                        <span>Disabled</span>
+                    </a>
+                </div>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Secondary Buttons</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-2">
+                    <a href="#" class="tw-btn-secondary tw-text-drumeo">
+                        <span>Drumeo</span>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-text-guitareo">
+                        <span>Guirateo</span>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-text-pianote">
+                        <span>Pianote</span>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-text-singeo"> 
+                        <span>
+                            <i class="fa fa-random tw-pr-2" aria-hidden="true"></i>
+                            With Icon
+                        </span>
+                    </a>
+                    <a href="#" class="tw-btn-secondary" disabled>
+                        <span>Disabled</span>
+                    </a>
+                </div>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Circle Buttons</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-2">
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-text-drumeo">
+                        <i class="fa fa-play" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-text-pianote">
+                        <i class="fa fa-pause" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-text-guitareo">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-text-singeo">
+                        <i class="fa fa-random" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle" disabled>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Small Button Variants</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-2">
+                    <a href="#" class="tw-btn-primary tw-btn-small tw-bg-drumeo">
+                        <span>Drumeo</span>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-small tw-text-guitareo">
+                        <span>Guirateo</span>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-btn-small tw-text-pianote">
+                        <i class="fa fa-random" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-btn-small tw-text-pianote" disabled>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </section>
+
+
+
+            
+            <!-- TOOL TIPS -->
+            <section class="tw-p-12">
+                <h3>Tooltips</h3><hr><br>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Tooltips</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-bg-gray-200 tw-my-3">
+                    <a href="#" class="tw-with-tooltip tw-mr-4 tw-text-drumeo">
+                        Link with Tooltip
+                        <div class="tw-tooltip">
+                            <i class="fas fa-info-circle tw-text-xs tw-mr-1"></i>
+                            Bottom Tooltip
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-text-pianote tw-with-tooltip tw-tooltip-center">
+                        <i class="fa fa-pause" aria-hidden="true"></i>
+                        <div class="tw-tooltip">
+                            Bottom Center
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-text-guitareo tw-with-tooltip tw-tooltip-right">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <div class="tw-tooltip">
+                            Bottom Left
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-text-singeo tw-with-tooltip tw-tooltip-left">
+                        <i class="fa fa-random" aria-hidden="true"></i>
+                        <div class="tw-tooltip">
+                            Bottom Right
+                        </div>
+                    </a>
+                    <br><br>
+                    <a href="#" class="tw-btn-primary tw-btn-small tw-bg-drumeo tw-with-tooltip tw-tooltip-top">
+                        <span>Drumeo</span>
+                        <div class="tw-tooltip tw-bg-drumeo-lightest tw-text-drumeo">
+                            Top Tooltip
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-btn-small tw-text-pianote tw-with-tooltip tw-tooltip-top tw-tooltip-center">
+                        <i class="fa fa-pause" aria-hidden="true"></i>
+                        <div class="tw-tooltip tw-bg-pianote-lightest tw-text-pianote">
+                            Top Center
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-btn-small tw-text-guitareo tw-with-tooltip tw-tooltip-top tw-tooltip-right">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <div class="tw-tooltip tw-bg-guitareo-lightest tw-text-guitareo">
+                            Top Left
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-btn-small tw-text-singeo tw-with-tooltip tw-tooltip-top tw-tooltip-left">
+                        <i class="fa fa-random" aria-hidden="true"></i>
+                        <div class="tw-tooltip tw-bg-singeo-lightest tw-text-singeo">
+                            Top Right
+                        </div>
+                    </a>
+                </div>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Tooltip Dark</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    <a href="#" class="tw-with-tooltip tw-mr-4 tw-text-drumeo">
+                        Link with Tooltip
+                        <div class="tw-tooltip tw-tooltip-dark">
+                            Lorum ipsum dolor sit amet, consectetur adipiscing elit
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-text-pianote tw-with-tooltip tw-tooltip-center">
+                        <i class="fa fa-pause" aria-hidden="true"></i>
+                        <div class="tw-tooltip tw-tooltip-dark">
+                            Bottom Center
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-text-guitareo tw-with-tooltip tw-tooltip-right">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <div class="tw-tooltip tw-tooltip-dark">
+                            Lorum ipsum dolor sit amet, consectetur adipiscing elit
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-text-singeo tw-with-tooltip tw-tooltip-left">
+                        <i class="fa fa-random" aria-hidden="true"></i>
+                        <div class="tw-tooltip tw-tooltip-dark">
+                            Lorum ipsum dolor sit amet, consectetur adipiscing elit
+                        </div>
+                    </a>
+                    <br><br>
+                    <a href="#" class="tw-btn-primary tw-btn-small tw-bg-drumeo tw-with-tooltip tw-tooltip-top">
+                        <span>Drumeo</span>
+                        <div class="tw-tooltip tw-bg-drumeo tw-tooltip-dark">
+                            <i class="fas fa-info-circle tw-text-xs tw-mr-1"></i>
+                            Top Tooltip
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-btn-small tw-text-pianote tw-with-tooltip tw-tooltip-top tw-tooltip-center">
+                        <i class="fa fa-pause" aria-hidden="true"></i>
+                        <div class="tw-tooltip tw-tooltip-dark tw-bg-pianote">
+                            Top Center
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-btn-small tw-text-guitareo tw-with-tooltip tw-tooltip-top tw-tooltip-right">
+                        <i class="fa fa-check" aria-hidden="true"></i>
+                        <div class="tw-tooltip tw-tooltip-dark tw-bg-guitareo">
+                            Top Left
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-secondary tw-btn-circle tw-btn-small tw-text-singeo tw-with-tooltip tw-tooltip-top tw-tooltip-right">
+                        <i class="fa fa-random" aria-hidden="true"></i>
+                        <div class="tw-tooltip tw-tooltip-dark tw-bg-singeo">
+                            Top Right
+                        </div>
+                    </a>
+                </div>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Tooltip Side Positions</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    <a href="#" class="tw-btn-primary tw-btn-small tw-bg-drumeo tw-with-tooltip tw-tooltip-leftside">
+                        <span>Side Left</span>
+                        <div class="tw-tooltip tw-tooltip-dark">
+                            <i class="fas fa-info-circle tw-text-xs tw-mr-1"></i>
+                            Side Left
+                        </div>
+                    </a>
+                    <a href="#" class="tw-btn-primary tw-btn-small tw-bg-pianote tw-with-tooltip tw-tooltip-rightside">
+                        <span>Side Right</span>
+                        <div class="tw-tooltip tw-tooltip-dark">
+                            <i class="fas fa-info-circle tw-text-xs tw-mr-1"></i>
+                            Side Right
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+
+
+
+            <!-- CONTENT LIST -->
+            <section class="tw-p-12">
+                <h3>Content List</h3><hr><br>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Example</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
+                    
+                </div>
+            </section>
+
+
+
+
+            <!-- MODALS -->
+            <section class="tw-p-12">
+                <h3>Modals <span class="tw-font-normal tw-text-gray-400">(Requires JS)</span></h3><hr><br>
+                <!-- Example -->
+                <h5 class="tw-font-bold tw-text-gray-600">Example</h5>
+                <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3"
+                     x-data="{ open: false }"
+                >
+                    
+                    <button class="tw-btn-primary tw-bg-drumeo" 
+                            @click="open = true"
+                            role="button">
+                            Open Modal
+                    </button>
+
+                    <!-- Modal Scroll Container -->
+                    <div @keydown.window.escape="open = false"  
+                         x-show="open" 
+                         class="tw-fixed tw-z-10 tw-inset-0 tw-overflow-y-auto" 
+                         aria-labelledby="modal-title" 
+                         x-ref="dialog" 
+                         aria-modal="true"
+                         x-cloak
+                    >
+                        <!-- Modal Content Container-->
+                        <div class="tw-flex tw-items-end tw-justify-center tw-min-h-screen tw-pt-4 tw-px-4 tw-pb-20 tw-text-center sm:tw-block tw-sm:p-0">
+                            
+                            <!-- Content Mask -->
+                            <div x-show="open" 
+                                 x-transition:enter="tw-ease-out tw-duration-300" 
+                                 x-transition:enter-start="tw-opacity-0" 
+                                 x-transition:enter-end="tw-opacity-100" 
+                                 x-transition:leave="tw-ease-in tw-duration-200" 
+                                 x-transition:leave-start="tw-opacity-100" 
+                                 x-transition:leave-end="tw-opacity-0" 
+                                 x-description="Background overlay, show/hide based on modal state." 
+                                 class="tw-fixed tw-inset-0 tw-bg-black tw-bg-opacity-90 tw-transition-opacity" 
+                                 @click="open = false" 
+                                 aria-hidden="true">
+                            </div>
+                          
+                            <!-- This element is to trick the browser into centering the modal contents. -->
+                            <span class="tw-hidden sm:tw-inline-block sm:tw-align-middle sm:tw-h-screen" aria-hidden="true">​</span>
+                          
+                            <div x-show="open" 
+                                 x-transition:enter="tw-ease-out tw-duration-300" 
+                                 x-transition:enter-start="tw-opacity-0 tw-translate-y-4 sm:tw-translate-y-0 sm:tw-scale-95" 
+                                 x-transition:enter-end="tw-opacity-100 tw-translate-y-0 sm:tw-scale-100" 
+                                 x-transition:leave="tw-ease-in tw-duration-200" 
+                                 x-transition:leave-start="tw-opacity-100 tw-translate-y-0 sm:tw-scale-100" 
+                                 x-transition:leave-end="tw-opacity-0 tw-translate-y-4 sm:tw-translate-y-0 sm:tw-scale-95" 
+                                 x-description="Modal panel, show/hide based on modal state." 
+                                 class="tw-inline-block tw-align-bottom tw-bg-white tw-rounded-lg tw-px-4 tw-pt-5 tw-pb-4 tw-text-left tw-overflow-hidden tw-shadow-xl tw-transform tw-transition-all sm:tw-my-8 sm:tw-align-middle sm:tw-max-w-lg sm:tw-w-full sm:tw-p-6"
+                            >
+                                <div class="sm:tw-flex sm:tw-items-start">
+                                    <div class="tw-mt-3 tw-text-center sm:tw-mt-0 sm:tw-ml-4 sm:tw-text-left">
+                                        <h3 class="tw-text-lg tw-leading-6 tw-font-medium tw-text-gray-900" id="modal-title">
+                                            Deactivate account
+                                        </h3>
+                                        <div class="tw-mt-2">
+                                            <p class="tw-text-sm tw-text-gray-500">
+                                                Are you sure you want to deactivate your account? All of your data will be permanently removed from our servers forever. This action cannot be undone.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                          
+                        </div>
+
+                        <button type="button" 
+                                class="tw-bg-transparent tw-absolute tw-top-1 tw-right-2 tw-text-white focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-offset-2 focus:tw-ring-indigo-500" 
+                                @click="open = false">
+                            <span class="tw-sr-only">Close</span>
+                            <i class="fal fa-times tw-text-7xl tw-text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="tw-w-full tw-bg-gray-200 tw-p-4">
+        <div class="tw-mx-auto tw-container">
+
+        </div>
+    </footer>
+</body>
+</html>
