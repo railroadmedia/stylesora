@@ -28,7 +28,7 @@ module.exports = {
             },
             spacing: stylesoraTheme.spacing,
             zIndex: stylesoraTheme.zIndex,
-            inset: stylesoraTheme.inset
+            inset: stylesoraTheme.inset         
         }
     },
     plugins: [
