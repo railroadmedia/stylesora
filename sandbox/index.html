@@ -148,7 +148,7 @@
                             With Icon
                         </span>
                     </a>
-                    <a href="#" class="tw-btn-secondary tw-text-recordeo hover:tw-bg-recordeo hover:tw-text-white"> 
+                    <a href="#" class="tw-btn-secondary tw-text-recordeo"> 
                         <span>
                             <i class="fa fa-random tw-pr-1" aria-hidden="true"></i>
                             With Icon
@@ -210,25 +210,398 @@
                 <h5 class="tw-font-bold tw-text-gray-600">Example</h5>
                 <div class="tw-p-4 tw-border tw-border-2 tw-border-gray-300 tw-my-3">
                     
-                    <form action="" method="get" class="form-example">
+                    <form action="" method="get" class="form-example" aria-invalid="false">
 
-                        <div class="tw-input-wrapper">
-                          <input type="text" name="name" id="name" required>
-                          <label for="name" class="tw-text-drumeo">Enter your name: </label>
+                        <div class="tw-input-field">
+                            <label for="name" class="tw-label">Name</label>
+                            <div class="tw-input-wrapper">
+                                <input  type="text" 
+                                        aria-required="true"
+                                        name="name" 
+                                        id="name" 
+                                        class="focus:tw-border-drumeo"
+                                        placeholder="Jane Doe">
+                            </div>
                         </div>
-                        <br>
-                        <div class="tw-input-wrapper">
-                          <input type="email" name="email" id="email" required>
-                          <label for="email" class="tw-text-drumeo">Enter your email: </label>
+
+                        <div class="tw-input-field" disabled>
+                            <label for="name" class="tw-label">Name</label>
+                            <div class="tw-input-wrapper">
+                                <input type="text" 
+                                       name="name" 
+                                       id="name" 
+                                       placeholder="Jane Doe">
+                            </div>
                         </div>
-                        <br>
+
+                        <div class="tw-input-field">
+                            <label for="email" class="tw-label">Email</label>
+                            <div class="tw-input-wrapper">
+                                <input  type="text" 
+                                        name="email" 
+                                        id="email" 
+                                        aria-required="true"
+                                        placeholder="you@example.com" 
+                                        aria-invalid="true" 
+                                        aria-describedby="email-error"
+                                >
+                                <div class="tw-input-icon">
+                                    <!-- Heroicon name: solid/exclamation-circle -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <p class="tw-input-message" id="email-error">Your password must be less than 4 characters.</p>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="tw-input-field">
+                            <label for="email" class="tw-label">Email</label>
+                            <div class="tw-input-wrapper">
+                                <input type="text" 
+                                       name="email" 
+                                       id="email" 
+                                       placeholder="you@example.com" 
+                                       aria-invalid="false" 
+                                       aria-required="true"
+                                       aria-describedby="email-error"
+                                >
+                                <div class="tw-input-icon">
+                                    <!-- Heroicon name: solid/exclamation-circle -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <p class="tw-input-message" id="email-error">Success.</p>
+                            </div>
+                        </div>
+
+                        <div class="tw-input-field">
+                            <label for="name" class="tw-label">Name</label>
+                            <div class="tw-input-wrapper">
+                                <select type="text" 
+                                        name="name" 
+                                        id="name" 
+                                        placeholder="Jane Doe">
+                                    <option value="" selected>Choose Car</option>
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                </select>
+                                <div class="tw-input-icon">
+                                    <!-- Heroicon name: solid/chevron-down -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tw-input-field" x-data="{dropdownMenu: false}" >
+                            <label id="listbox-label" class="tw-label">Links</label>
+                            <div class="tw-input-wrapper" @click.away = "dropdownMenu = false">
+                                <button @click="dropdownMenu = ! dropdownMenu"
+                                        type="button"  
+                                        aria-haspopup="listbox" 
+                                        aria-expanded="true" 
+                                        aria-labelledby="listbox-label"
+                                >
+                                    <span>
+                                      Select Links
+                                    </span>
+                                    <span class="tw-input-icon">
+                                        <!-- Heroicon name: solid/chevron-down -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <!-- Dropdown -->
+                                <ul x-show="dropdownMenu" 
+                                    class="tw-dropdown" 
+                                    tabindex="-1" 
+                                    x-cloak
+                                    role="listbox" 
+                                    aria-labelledby="listbox-label" 
+                                    aria-activedescendant="listbox-option-3">
+                                
+                                    <li id="listbox-option-1" 
+                                        role="option">
+                                        <a href="#">
+                                            Link 1
+                                        </a>
+                                    </li>
+                                    <li id="listbox-option-2" 
+                                        role="option">
+                                        <a href="#">
+                                            Link 2
+                                        </a>
+                                    </li>
+                                    <li id="listbox-option-3" 
+                                        role="option">
+                                        <a href="#">
+                                            Link 3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        
+                        <!-- Link Dropdown -->
+                        <div class="tw-input-field" x-data="{dropdownMenu: false}" >
+                            <label id="listbox-label" class="tw-label">Links</label>
+                            <div class="tw-input-wrapper" @click.away = "dropdownMenu = false">
+                                <button @click="dropdownMenu = ! dropdownMenu"
+                                        type="button"  
+                                        aria-haspopup="listbox" 
+                                        aria-expanded="true" 
+                                        aria-labelledby="listbox-label"
+                                >
+                                    <span>
+                                      Select Links
+                                    </span>
+                                    <span class="tw-input-icon">
+                                        <!-- Heroicon name: solid/chevron-down -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <!-- Dropdown -->
+                                <ul x-show="dropdownMenu" 
+                                    class="tw-dropdown" 
+                                    x-cloak
+                                    tabindex="-1" 
+                                    role="listbox" 
+                                    aria-labelledby="listbox-label" 
+                                    aria-activedescendant="listbox-option-3">
+                                
+                                    <li id="listbox-option-1" 
+                                        role="option">
+                                        <a href="#">
+                                            Link 1
+                                        </a>
+                                    </li>
+                                    <li id="listbox-option-2" 
+                                        role="option">
+                                        <a href="#">
+                                            Link 2
+                                        </a>
+                                    </li>
+                                    <li id="listbox-option-3" 
+                                        role="option">
+                                        <a href="#">
+                                            Link 3
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Radio Dropdown -->
+                        <div class="tw-input-field" x-data="{dropdownMenu: false, option: ''}" >
+                            <label id="listbox-label" class="tw-label">Single Select</label>
+                            <div class="tw-input-wrapper" @click.away = "dropdownMenu = false">
+                                <button @click="dropdownMenu = ! dropdownMenu"
+                                        type="button"  
+                                        aria-haspopup="listbox" 
+                                        aria-expanded="true" 
+                                        aria-labelledby="listbox-label"
+                                >
+                                    <span x-text="option || 'Select One Item' "></span>
+                                    <span class="tw-input-icon">
+                                        <!-- Heroicon name: solid/chevron-down -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <!-- Dropdown -->
+                                <ul x-show="dropdownMenu" 
+                                    class="tw-dropdown" 
+                                    tabindex="-1" 
+                                    x-cloak
+                                    role="listbox" 
+                                    aria-labelledby="listbox-label" 
+                                    aria-activedescendant="listbox-option-3">
+                                
+                                    <li id="listbox-option-1" 
+                                        role="option">
+                                        <input type="radio" id="option-1" name="option" value="Option 1" x-model="option">
+                                        <label for="option-1" class="tw-option">
+                                            <span>Option 1</span>
+                                            <span class="tw-input-icon" 
+                                                  aria-hidden="true">
+                                                <svg class="" fill="currentColor" viewBox="0 0 12 12">
+                                                    <path d="M3.707 5.293a1 1 0 00-1.414 1.414l1.414-1.414zM5 8l-.707.707a1 1 0 001.414 0L5 8zm4.707-3.293a1 1 0 00-1.414-1.414l1.414 1.414zm-7.414 2l2 2 1.414-1.414-2-2-1.414 1.414zm3.414 2l4-4-1.414-1.414-4 4 1.414 1.414z" />
+                                                </svg>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li id="listbox-option-2" 
+                                        role="option">
+                                        <input type="radio" id="option-2" name="option" value="Option 2" x-model="option">
+                                        <label for="option-2" class="tw-option">
+                                            <span>Option 2</span>
+                                            <span class="tw-input-icon" 
+                                                  aria-hidden="true">
+                                                <svg class="" fill="currentColor" viewBox="0 0 12 12">
+                                                    <path d="M3.707 5.293a1 1 0 00-1.414 1.414l1.414-1.414zM5 8l-.707.707a1 1 0 001.414 0L5 8zm4.707-3.293a1 1 0 00-1.414-1.414l1.414 1.414zm-7.414 2l2 2 1.414-1.414-2-2-1.414 1.414zm3.414 2l4-4-1.414-1.414-4 4 1.414 1.414z" />
+                                                </svg>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li id="listbox-option-3" 
+                                        role="option">
+                                        <input type="radio" id="option-3" name="option" value="Option 3" x-model="option">
+                                        <label for="option-3" class="tw-option">
+                                            <span>Option 3</span>
+                                            <span class="tw-input-icon" 
+                                                  aria-hidden="true">
+                                                <svg class="" fill="currentColor" viewBox="0 0 12 12">
+                                                    <path d="M3.707 5.293a1 1 0 00-1.414 1.414l1.414-1.414zM5 8l-.707.707a1 1 0 001.414 0L5 8zm4.707-3.293a1 1 0 00-1.414-1.414l1.414 1.414zm-7.414 2l2 2 1.414-1.414-2-2-1.414 1.414zm3.414 2l4-4-1.414-1.414-4 4 1.414 1.414z" />
+                                                </svg>
+                                            </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Checkbox Dropdown -->
+                        <div class="tw-input-field" x-data="{ dropdownMenu: false, options: [] }" >
+                            <label id="multi-listbox-label" class="tw-label">Multi Select</label>
+                            <div class="tw-input-wrapper" @click.away = "dropdownMenu = false">
+                                <button @click="dropdownMenu = ! dropdownMenu"
+                                        type="button"  
+                                        aria-haspopup="multi-listbox" 
+                                        aria-expanded="true" 
+                                        aria-labelledby="multi-listbox-label"
+                                >
+                                    <span x-text="options.length ? options : 'Select Multiple Options' "></span>
+
+                                    <span class="tw-input-icon">
+                                        <!-- Heroicon name: solid/chevron-down -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <!-- Dropdown -->
+                                <ul x-show="dropdownMenu" 
+                                    class="tw-dropdown" 
+                                    tabindex="-1" 
+                                    x-cloak
+                                    role="multi-listbox" 
+                                    aria-labelledby="multi-listbox-label" 
+                                    aria-activedescendant="multi-listbox-option-3">
+                                
+                                    <li id="multi-listbox-option-1" 
+                                        role="option">
+                                        <input type="checkbox" id="multi-option-1" value="Option 1" x-model="options">
+                                        <label for="multi-option-1" class="tw-option">
+                                            <span>Option 1</span>
+                                            <span class="tw-input-icon" 
+                                                  aria-hidden="true">
+                                                <svg class="" fill="currentColor" viewBox="0 0 12 12">
+                                                    <path d="M3.707 5.293a1 1 0 00-1.414 1.414l1.414-1.414zM5 8l-.707.707a1 1 0 001.414 0L5 8zm4.707-3.293a1 1 0 00-1.414-1.414l1.414 1.414zm-7.414 2l2 2 1.414-1.414-2-2-1.414 1.414zm3.414 2l4-4-1.414-1.414-4 4 1.414 1.414z" />
+                                                </svg>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li id="multi-listbox-option-2" 
+                                        role="option">
+                                        <input type="checkbox" id="multi-option-2" value="Option 2" x-model="options">
+                                        <label for="multi-option-2" class="tw-option" @click="">
+                                            <span>Option 2</span>
+                                            <span class="tw-input-icon" 
+                                                  aria-hidden="true">
+                                                <svg class="" fill="currentColor" viewBox="0 0 12 12">
+                                                    <path d="M3.707 5.293a1 1 0 00-1.414 1.414l1.414-1.414zM5 8l-.707.707a1 1 0 001.414 0L5 8zm4.707-3.293a1 1 0 00-1.414-1.414l1.414 1.414zm-7.414 2l2 2 1.414-1.414-2-2-1.414 1.414zm3.414 2l4-4-1.414-1.414-4 4 1.414 1.414z" />
+                                                </svg>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li id="multi-listbox-option-3" 
+                                        role="option">
+                                        <input type="checkbox" id="multi-option-3" value="Option 3" x-model="options">
+                                        <label for="multi-option-3" class="tw-option" @click="">
+                                            <span>Option 3</span>
+                                            <span class="tw-input-icon" 
+                                                  aria-hidden="true">
+                                                <svg class="" fill="currentColor" viewBox="0 0 12 12">
+                                                    <path d="M3.707 5.293a1 1 0 00-1.414 1.414l1.414-1.414zM5 8l-.707.707a1 1 0 001.414 0L5 8zm4.707-3.293a1 1 0 00-1.414-1.414l1.414 1.414zm-7.414 2l2 2 1.414-1.414-2-2-1.414 1.414zm3.414 2l4-4-1.414-1.414-4 4 1.414 1.414z" />
+                                                </svg>
+                                            </span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="tw-input-field">
+                            <label for="name" class="tw-label">Message</label>
+                            <div class="tw-input-wrapper">
+                                <textarea type="text" 
+                                        name="name" 
+                                        id="name"
+                                        rows="4" 
+                                        placeholder="Jane Doe">
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="tw-input-field" disabled>
+                            <label for="name" class="tw-label">Name</label>
+                            <div class="tw-input-wrapper">
+                                <textarea type="text" 
+                                     name="name" 
+                                     id="name" 
+                                     rows="4"
+                                     placeholder="Jane Doe">
+                                </textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="tw-toggle-field tw-mb-4 tw-relative tw-text-drumeo" x-data="{checked: false}">
+                            <!-- input -->
+                            <input type="checkbox" id="toggleB" class="tw-toggle" x-model="checked">
+                            <!-- line -->
+                            <label for="toggleB">
+                                <div class="tw-toggle-wrapper"
+                                x-bind:class="checked ? 'tw-bg-current' : 'tw-bg-gray-200' ">
+                                    <!-- dot -->
+                                    <div class="tw-toggle-switch tw-translate-x-0 tw-transform"
+                                            x-bind:class="checked ? 'tw-translate-x-5' : 'tw-translate-x-0' ">
+                                        <span class="tw-toggle-off" 
+                                                x-bind:class="checked ? 'tw-opacity-0 tw-ease-out tw-duration-100' : 'tw-opacity-100 tw-ease-in tw-duration-200' "
+                                                aria-hidden="true"
+                                        >
+                                            <svg fill="none" viewBox="0 0 12 12">
+                                                <path d="M4 8l2-2m0 0l2-2M6 6L4 4m2 2l2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <span class="tw-toggle-on" 
+                                                x-bind:class="checked ? 'tw-opacity-100 tw-ease-in tw-duration-200' : 'tw-opacity-0 tw-ease-out tw-duration-100' "
+                                                aria-hidden="true">
+                                            <svg fill="currentColor" viewBox="0 0 12 12">
+                                                <path d="M3.707 5.293a1 1 0 00-1.414 1.414l1.414-1.414zM5 8l-.707.707a1 1 0 001.414 0L5 8zm4.707-3.293a1 1 0 00-1.414-1.414l1.414 1.414zm-7.414 2l2 2 1.414-1.414-2-2-1.414 1.414zm3.414 2l4-4-1.414-1.414-4 4 1.414 1.414z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+
                         <div class="form-example">
-                          <input class="tw-btn-primary tw-bg-drumeo" role="button" type="submit" value="Subscribe!">
+                            <input class="tw-btn-primary tw-bg-drumeo" role="button" type="submit" value="Subscribe!">
                         </div>
 
                     </form>
-
-
                 </div>
             </section>
 
@@ -364,9 +737,6 @@
                 </div>
             </section>
 
-
-
-
             <!-- CONTENT LIST -->
             <section class="tw-p-12">
                 <h3>Content List</h3><hr><br>
@@ -376,10 +746,6 @@
                     
                 </div>
             </section>
-
-            
-
-
 
             <!-- MODALS -->
             <section class="tw-p-12">
@@ -451,7 +817,7 @@
                         </div>
 
                         <button type="button" 
-                                class="tw-bg-transparent tw-absolute tw-top-1 tw-right-2 tw-text-white focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-offset-2 focus:tw-ring-indigo-500" 
+                                class="tw-bg-transparent tw-absolute tw-top-1 tw-right-2 tw-text-white focus:tw-outline-none focus:tw-ring-2 focus:tw-ring-offset-2 focus:tw-ring-drumeo-500" 
                                 @click="open = false">
                             <span class="tw-sr-only">Close</span>
                             <i class="fal fa-times tw-text-7xl tw-text-white"></i>
