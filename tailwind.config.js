@@ -33,8 +33,13 @@ module.exports = {
     },
     plugins: [
         require('./lib/base')(),
-        require('./lib/utilities')(),
-        require('./lib/components')(),
+        require('./lib/attributes')(),
+        require('./lib/utilities')({
+            variants: ['responsive', 'hover'],
+        }),
+        require('./lib/components')({
+            variants: ['responsive', 'hover'],
+        }),
     ],
 };
 
