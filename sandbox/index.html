@@ -212,76 +212,57 @@
                     
                     <form action="" method="get" class="form-example" aria-invalid="false">
 
-                        <div class="tw-input-field">
+                        <!-- Text Field-->
+                        <div class="tw-input-field" disabled>
                             <label for="name" class="tw-label">Name</label>
                             <div class="tw-input-wrapper">
                                 <input  type="text" 
                                         aria-required="true"
+                                        aria-invalid="false"
                                         name="name" 
                                         id="name" 
                                         class="focus:tw-border-drumeo"
-                                        placeholder="Jane Doe">
+                                        placeholder="Jane Doe"
+                                >
+                                <div class="tw-input-icon">
+                                    <!-- Heroicon name: solid/exclamation-circle -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="tw-invalid-icon" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                <p class="tw-input-message" id="email-error">Can not be left blank.</p>
                             </div>
                         </div>
 
+                        <!-- Email Field -->
                         <div class="tw-input-field" disabled>
-                            <label for="name" class="tw-label">Name</label>
-                            <div class="tw-input-wrapper">
-                                <input type="text" 
-                                       name="name" 
-                                       id="name" 
-                                       placeholder="Jane Doe">
-                            </div>
-                        </div>
-
-                        <div class="tw-input-field">
                             <label for="email" class="tw-label">Email</label>
                             <div class="tw-input-wrapper">
                                 <input  type="text" 
                                         name="email" 
                                         id="email" 
                                         aria-required="true"
+                                        aria-invalid="false" 
                                         placeholder="you@example.com" 
-                                        aria-invalid="true" 
                                         aria-describedby="email-error"
                                 >
                                 <div class="tw-input-icon">
                                     <!-- Heroicon name: solid/exclamation-circle -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="tw-invalid-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
                                     </svg>
                                 </div>
-                                <p class="tw-input-message" id="email-error">Your password must be less than 4 characters.</p>
+                                <p class="tw-input-message" id="email-error">Email must be correct format.</p>
                             </div>
                         </div>
 
-                        
-
-                        <div class="tw-input-field">
-                            <label for="email" class="tw-label">Email</label>
-                            <div class="tw-input-wrapper">
-                                <input type="text" 
-                                       name="email" 
-                                       id="email" 
-                                       placeholder="you@example.com" 
-                                       aria-invalid="false" 
-                                       aria-required="true"
-                                       aria-describedby="email-error"
-                                >
-                                <div class="tw-input-icon">
-                                    <!-- Heroicon name: solid/exclamation-circle -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                    </svg>
-                                </div>
-                                <p class="tw-input-message" id="email-error">Success.</p>
-                            </div>
-                        </div>
-
-                        <div class="tw-input-field">
-                            <label for="name" class="tw-label">Name</label>
+                        <!-- Select box -->
+                        <div class="tw-input-field" disabled>
+                            <label for="name" class="tw-label">Select a Car</label>
                             <div class="tw-input-wrapper">
                                 <select type="text" 
+                                        aria-required="true"
+                                        aria-invalid="false"
                                         name="name" 
                                         id="name" 
                                         placeholder="Jane Doe">
@@ -292,66 +273,19 @@
                                 </select>
                                 <div class="tw-input-icon">
                                     <!-- Heroicon name: solid/chevron-down -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="tw-invalid-icon" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                    </svg>
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                                     </svg>
                                 </div>
+                                <p class="tw-input-message" id="email-error">Must select an option.</p>
                             </div>
                         </div>
-                        
-                        <div class="tw-input-field" x-data="{dropdownMenu: false}" >
-                            <label id="listbox-label" class="tw-label">Links</label>
-                            <div class="tw-input-wrapper" @click.away = "dropdownMenu = false">
-                                <button @click="dropdownMenu = ! dropdownMenu"
-                                        type="button"  
-                                        aria-haspopup="listbox" 
-                                        aria-expanded="true" 
-                                        aria-labelledby="listbox-label"
-                                >
-                                    <span>
-                                      Select Links
-                                    </span>
-                                    <span class="tw-input-icon">
-                                        <!-- Heroicon name: solid/chevron-down -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <!-- Dropdown -->
-                                <ul x-show="dropdownMenu" 
-                                    class="tw-dropdown" 
-                                    tabindex="-1" 
-                                    x-cloak
-                                    role="listbox" 
-                                    aria-labelledby="listbox-label" 
-                                    aria-activedescendant="listbox-option-3">
-                                
-                                    <li id="listbox-option-1" 
-                                        role="option">
-                                        <a href="#">
-                                            Link 1
-                                        </a>
-                                    </li>
-                                    <li id="listbox-option-2" 
-                                        role="option">
-                                        <a href="#">
-                                            Link 2
-                                        </a>
-                                    </li>
-                                    <li id="listbox-option-3" 
-                                        role="option">
-                                        <a href="#">
-                                            Link 3
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
                         
                         <!-- Link Dropdown -->
-                        <div class="tw-input-field" x-data="{dropdownMenu: false}" >
+                        <div class="tw-input-field" disabled x-data="{dropdownMenu: false}" >
                             <label id="listbox-label" class="tw-label">Links</label>
                             <div class="tw-input-wrapper" @click.away = "dropdownMenu = false">
                                 <button @click="dropdownMenu = ! dropdownMenu"
@@ -359,11 +293,17 @@
                                         aria-haspopup="listbox" 
                                         aria-expanded="true" 
                                         aria-labelledby="listbox-label"
+                                        aria-required="true"
+                                        aria-invalid="false" 
                                 >
                                     <span>
                                       Select Links
                                     </span>
                                     <span class="tw-input-icon">
+                                        <!-- Heroicon name: solid/exclamation-circle -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="tw-invalid-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                        </svg>
                                         <!-- Heroicon name: solid/chevron-down -->
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -373,8 +313,8 @@
                                 <!-- Dropdown -->
                                 <ul x-show="dropdownMenu" 
                                     class="tw-dropdown" 
-                                    x-cloak
                                     tabindex="-1" 
+                                    x-cloak
                                     role="listbox" 
                                     aria-labelledby="listbox-label" 
                                     aria-activedescendant="listbox-option-3">
@@ -398,11 +338,12 @@
                                         </a>
                                     </li>
                                 </ul>
+                                <p class="tw-input-message" id="email-error">Must select an option.</p>
                             </div>
                         </div>
 
                         <!-- Radio Dropdown -->
-                        <div class="tw-input-field" x-data="{dropdownMenu: false, option: ''}" >
+                        <div class="tw-input-field" disabled x-data="{dropdownMenu: false, option: ''}" >
                             <label id="listbox-label" class="tw-label">Single Select</label>
                             <div class="tw-input-wrapper" @click.away = "dropdownMenu = false">
                                 <button @click="dropdownMenu = ! dropdownMenu"
@@ -410,9 +351,15 @@
                                         aria-haspopup="listbox" 
                                         aria-expanded="true" 
                                         aria-labelledby="listbox-label"
+                                        aria-required="true"
+                                        aria-invalid="false" 
                                 >
                                     <span x-text="option || 'Select One Item' "></span>
                                     <span class="tw-input-icon">
+                                        <!-- Heroicon name: solid/exclamation-circle -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="tw-invalid-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                        </svg>
                                         <!-- Heroicon name: solid/chevron-down -->
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -468,11 +415,12 @@
                                         </label>
                                     </li>
                                 </ul>
+                                <p class="tw-input-message" id="email-error">Must select an option.</p>
                             </div>
                         </div>
 
                         <!-- Checkbox Dropdown -->
-                        <div class="tw-input-field" x-data="{ dropdownMenu: false, options: [] }" >
+                        <div class="tw-input-field" disabled x-data="{ dropdownMenu: false, options: [] }" >
                             <label id="multi-listbox-label" class="tw-label">Multi Select</label>
                             <div class="tw-input-wrapper" @click.away = "dropdownMenu = false">
                                 <button @click="dropdownMenu = ! dropdownMenu"
@@ -480,10 +428,16 @@
                                         aria-haspopup="multi-listbox" 
                                         aria-expanded="true" 
                                         aria-labelledby="multi-listbox-label"
+                                        aria-required="true"
+                                        aria-invalid="false" 
                                 >
                                     <span x-text="options.length ? options : 'Select Multiple Options' "></span>
 
                                     <span class="tw-input-icon">
+                                        <!-- Heroicon name: solid/exclamation-circle -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="tw-invalid-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                        </svg>
                                         <!-- Heroicon name: solid/chevron-down -->
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
@@ -539,64 +493,126 @@
                                         </label>
                                     </li>
                                 </ul>
+                                <p class="tw-input-message" id="email-error">Must select an option.</p>
                             </div>
                         </div>
 
-
-                        <div class="tw-input-field">
+                        <!-- Textarea -->
+                        <div class="tw-input-field" disabled>
                             <label for="name" class="tw-label">Message</label>
                             <div class="tw-input-wrapper">
                                 <textarea type="text" 
                                         name="name" 
                                         id="name"
                                         rows="4" 
-                                        placeholder="Jane Doe">
+                                        placeholder="Jane Doe"
+                                        aria-required="true"
+                                        aria-invalid="false" 
+                                >
                                 </textarea>
-                            </div>
-                        </div>
-
-                        <div class="tw-input-field" disabled>
-                            <label for="name" class="tw-label">Name</label>
-                            <div class="tw-input-wrapper">
-                                <textarea type="text" 
-                                     name="name" 
-                                     id="name" 
-                                     rows="4"
-                                     placeholder="Jane Doe">
-                                </textarea>
+                                <span class="tw-input-icon">
+                                    <!-- Heroicon name: solid/exclamation-circle -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="tw-invalid-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                    </svg>
+                                </span>
+                                <p class="tw-input-message" id="email-error">Must add message.</p>
                             </div>
                         </div>
                         
-                        <div class="tw-toggle-field tw-mb-4 tw-relative tw-text-drumeo" x-data="{checked: false}">
-                            <!-- input -->
-                            <input type="checkbox" id="toggleB" class="tw-toggle" x-model="checked">
-                            <!-- line -->
-                            <label for="toggleB">
-                                <div class="tw-toggle-wrapper"
-                                x-bind:class="checked ? 'tw-bg-current' : 'tw-bg-gray-200' ">
-                                    <!-- dot -->
-                                    <div class="tw-toggle-switch tw-translate-x-0 tw-transform"
-                                            x-bind:class="checked ? 'tw-translate-x-5' : 'tw-translate-x-0' ">
-                                        <span class="tw-toggle-off" 
-                                                x-bind:class="checked ? 'tw-opacity-0 tw-ease-out tw-duration-100' : 'tw-opacity-100 tw-ease-in tw-duration-200' "
-                                                aria-hidden="true"
-                                        >
-                                            <svg fill="none" viewBox="0 0 12 12">
-                                                <path d="M4 8l2-2m0 0l2-2M6 6L4 4m2 2l2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                        </span>
-                                        <span class="tw-toggle-on" 
-                                                x-bind:class="checked ? 'tw-opacity-100 tw-ease-in tw-duration-200' : 'tw-opacity-0 tw-ease-out tw-duration-100' "
-                                                aria-hidden="true">
-                                            <svg fill="currentColor" viewBox="0 0 12 12">
-                                                <path d="M3.707 5.293a1 1 0 00-1.414 1.414l1.414-1.414zM5 8l-.707.707a1 1 0 001.414 0L5 8zm4.707-3.293a1 1 0 00-1.414-1.414l1.414 1.414zm-7.414 2l2 2 1.414-1.414-2-2-1.414 1.414zm3.414 2l4-4-1.414-1.414-4 4 1.414 1.414z" />
-                                            </svg>
-                                        </span>
+                        <!-- Toggle Switch -->
+                        <div class="tw-toggle-field tw-text-drumeo" 
+                             x-data="{checked: false, disabled: false}"
+                             aria-required="true"
+                             x-bind:aria-invalid="checked || disabled ? false : true" 
+                             x-bind:disabled="disabled"
+                        >
+                            <div class="tw-toggle-wrapper">
+                                <!-- input -->
+                                <input type="checkbox" id="toggleB" class="tw-toggle" x-model="checked">
+                                <!-- line -->
+                                <label for="toggleB">
+                                    <div class="tw-toggle"
+                                    x-bind:class="checked ? 'tw-bg-current' : 'tw-bg-gray-200' ">
+                                        <!-- dot -->
+                                        <div class="tw-toggle-switch tw-translate-x-0 tw-transform"
+                                                x-bind:class="checked ? 'tw-translate-x-5' : 'tw-translate-x-0' ">
+                                            <span class="tw-toggle-off" 
+                                                    x-bind:class="checked ? 'tw-opacity-0 tw-ease-out tw-duration-100' : 'tw-opacity-100 tw-ease-in tw-duration-200' "
+                                                    aria-hidden="true"
+                                            >
+                                                <svg fill="none" viewBox="0 0 12 12">
+                                                    <path d="M4 8l2-2m0 0l2-2M6 6L4 4m2 2l2 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            </span>
+                                            <span class="tw-toggle-on" 
+                                                    x-bind:class="checked ? 'tw-opacity-100 tw-ease-in tw-duration-200' : 'tw-opacity-0 tw-ease-out tw-duration-100' "
+                                                    aria-hidden="true">
+                                                <svg fill="currentColor" viewBox="0 0 12 12">
+                                                    <path d="M3.707 5.293a1 1 0 00-1.414 1.414l1.414-1.414zM5 8l-.707.707a1 1 0 001.414 0L5 8zm4.707-3.293a1 1 0 00-1.414-1.414l1.414 1.414zm-7.414 2l2 2 1.414-1.414-2-2-1.414 1.414zm3.414 2l4-4-1.414-1.414-4 4 1.414 1.414z" />
+                                                </svg>
+                                            </span>
+                                        </div>
                                     </div>
-                                </div>
-                            </label>
+                                </label>
+                                <span class="tw-toggle-text">Subscribe to Newsletter</span>
+                            </div>
+                            <!-- message -->
+                            <p class="tw-input-message" id="email-error">Please select this.</p>
                         </div>
 
+                        <!-- Radio Inputs -->
+                        <fieldset class="tw-fieldset" 
+                                  aria-required="true"
+                                  aria-invalid="false" 
+                                  disabled
+                        >
+                            <p class="tw-fieldset-title">Choose a Language</p>
+                            <div class="tw-radio-group">
+                                <div class="tw-radio-field">
+                                    <input type="radio" id="html" name="fav_language" value="HTML">
+                                    <label for="html">HTML</label>
+                                </div>
+                                <div class="tw-radio-field tw-inline-flex tw-items-center tw-mr-4">
+                                    <input type="radio" id="css" name="fav_language" value="CSS">
+                                    <label for="css">CSS</label>
+                                </div>
+                                <div class="tw-radio-field tw-inline-flex tw-items-center tw-mr-4">
+                                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                    <label for="javascript">JavaScript</label>  
+                                </div>
+                            </div>
+                            <p class="tw-input-message" id="email-error">Must select an option.</p>
+                        </fieldset>
+
+                        <!-- File Input -->
+                        <div class="tw-file-field sm:tw-w-1/3 tw-ml-auto" disabled>
+                            <label for="file-input" 
+                                   class="tw-btn-secondary tw-text-gray-400 sm:tw-btn-small"
+                                   aria-required="true"
+                                   aria-invalid="false"
+                            >
+                                <div class="tw-input-icon">
+                                    <i class="fal fa-paperclip"></i>
+                                    <!-- Heroicon name: solid/exclamation-circle -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="tw-invalid-icon" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                                Attach File
+                                <input type="file" 
+                                        id="file-input" 
+                                        accept="image/*"
+                                >
+                            </label>
+                            <!-- Message -->
+                            <div class="tw-input-messages">
+                                <p class="tw-primary-message">Please only upload images</p>
+                                <p class="tw-secondary-message">Max File Size 100MB</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Submit Button -->
                         <div class="form-example">
                             <input class="tw-btn-primary tw-bg-drumeo" role="button" type="submit" value="Subscribe!">
                         </div>
@@ -623,10 +639,6 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 tw-invalid-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
                                 </svg>
-                                <!-- -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 tw-valid-icon" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
-                                </svg>
                             </div>
                             <p class="tw-input-message" id="email-error">Your password must be less than 4 characters.</p>
                         </div>
@@ -646,10 +658,6 @@
                                 <!-- Heroicon name: solid/exclamation-circle -->
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 tw-invalid-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
-                                </svg>
-                                <!-- -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 tw-valid-icon" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                                 </svg>
                             </div>
                             <p class="tw-input-message" id="password-error">Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters.</p>
