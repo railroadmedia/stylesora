@@ -7,12 +7,13 @@ if git diff-index --quiet HEAD --; then
     git commit -am "New pre-release build";
 
     # Create a new patch version
-    npm version prerelease --preid=3
+    npm version prerelease --preid = t3
 
     git push;
 
     # Publish the Package
-    npm publish --tag 3;
+    npm publish --tag t3
+;
 else
     echo 'Local git directory is not clean! Commit your files and try again.'
 fi
