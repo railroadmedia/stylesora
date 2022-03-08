@@ -7,7 +7,7 @@ if git diff-index --quiet HEAD --; then
     git commit -am "New pre-release build";
 
     # Create a new patch version
-    npm version prerelease --preid = t3;
+    npm version prerelease --preid=t3;
 
     git push;
 
