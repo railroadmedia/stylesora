@@ -6,9 +6,6 @@
   "files": [
     "lib"
   ],
-  "exports": {
-    "./": "./lib/"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/railroadmedia/stylesora"
