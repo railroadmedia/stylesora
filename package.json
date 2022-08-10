@@ -1,6 +1,6 @@
 {
   "name": "stylesora",
-  "version": "1.0.101",
+  "version": "1.0.102-t3.10",
   "description": "A CSS package for styling Musora's websites and web applications with ease. Includes Tailwind CSS as well as custom patterns for rapid prototyping and development.",
   "main": "./lib/index.js",
   "files": [
@@ -31,7 +31,7 @@
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.0",
     "postcss-nested": "^5.0.3",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^3.0.15"
   },
   "engines": {
     "node": ">=14.0.0",
